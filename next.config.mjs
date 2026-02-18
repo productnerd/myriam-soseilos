@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  basePath: "/myriam-soseilos",
   images: {
     unoptimized: true,
     remotePatterns: [
