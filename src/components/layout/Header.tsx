@@ -70,7 +70,7 @@ export function Header() {
             <Image
               src={logo}
               alt="Myriam Soseilos"
-              className="h-14 w-auto invert"
+              className="h-14 w-auto"
               priority
             />
           </Link>

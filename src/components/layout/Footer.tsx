@@ -13,7 +13,7 @@ export function Footer() {
               <Image
                 src={logo}
                 alt="Myriam Soseilos"
-                className="h-14 w-auto invert"
+                className="h-14 w-auto"
               />
             </Link>
             <p className="mt-4 text-sm text-muted leading-relaxed">

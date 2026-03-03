@@ -5,7 +5,7 @@ export const siteContent = {
     name: "Myriam Soseilos",
     tagline: "Audaciously different fine jewellery",
     heroSubtitle:
-      "Unconventional designs inspired by architecture, space and the wearer themselves. For the ones who dare to be different.",
+      "Fine jewellery that moves, transforms and provokes. Inspired by architecture, space and the wearer themselves. For the independent-minded few who refuse to wear what everybody else wears.",
   },
   about: {
     intro:
@@ -13,9 +13,9 @@ export const siteContent = {
     origin:
       "Myriam's journey into jewellery began during a traineeship at Vogue, where she was immersed in the world of fashion and design. She went on to work at a leading advertising agency, but found herself drawn to creating jewellery in her spare time. When people began asking to buy her pieces — and commission bespoke designs — she made the leap to follow her passion full-time.",
     evolution:
-      "Her early collections were defined by sharp, angular, architectural forms. Over time her style evolved to incorporate movement and transformation — pieces that shift, twist and change with the wearer. She pioneered the use of magnets in fine jewellery, allowing pieces to be worn in multiple configurations. She created a ring that changes colour with body temperature, and was one of the first jewellery designers to work with osmium, the world's densest naturally occurring element.",
+      "Her early collections were defined by sharp, angular, architectural forms. Then came the question that changed everything: what else could it do? Myriam became obsessed with complications — the mechanical challenge of making jewellery that does something, not just sits there. Her Transformer collection introduced magnets into fine jewellery, letting a single piece be worn in ten different ways. She created a ring that shifts colour with body temperature. She became one of the first designers in the world to work with osmium, the densest naturally occurring element on Earth. One client picked up a piece and asked, 'but what does it do?' — and that question became a design philosophy.",
     philosophy:
-      "Nothing Myriam creates is conventional. Whether it's straight-line geometric shapes, architectural influences, or flexible pieces that transform and adapt — there's nothing quite like it on the market. Her designs are incomparable and impossible to replicate, because they come from a fiercely creative and individual mind.",
+      "Myriam wouldn't enjoy working on something she didn't love or didn't feel was different. That integrity runs through every piece. Whether it's geometric architecture you can wear, or flexible forms that transform and adapt — nothing she makes is conventional, and nothing is quite like it on the market. Her designs are incomparable and impossible to replicate, because they come from a fiercely creative mind that asks 'what if?' before every project.",
     tedTalk: {
       url: "https://www.youtube.com/watch?v=GHxo5kTgqHo",
       title: "Myriam's TEDx talk on the intersection of jewellery, art and identity",
@@ -33,9 +33,9 @@ export const siteContent = {
     },
   },
   bespoke: {
-    heading: "Bespoke Creations",
+    heading: "My Way",
     description:
-      "Myriam creates fully custom, one-of-a-kind pieces — engagement rings born from shared memories, heirloom transformations that bridge generations, statement pieces that capture a moment in time. Each commission is a deeply personal collaboration, moving from concept to finished piece in just 3 to 4 weeks. Using precision 3D modelling, every detail is perfected before casting at a specialist atelier in Athens and hand-finishing in Cyprus or the UK. Clients can also bring existing jewellery to be recycled and reimagined into something entirely new.",
+      "Bespoke at Myriam Soseilos means truly one-of-a-kind — engagement rings born from shared memories, heirloom transformations that bridge generations, statement pieces that mark a personal story. A wedding ring. A spine piece. Something nobody else on the planet will ever own. Each commission moves from concept to finished piece in 3 to 4 weeks, using precision 3D modelling to perfect every detail before casting at a specialist atelier in Athens and hand-finishing in Cyprus or the UK. Clients can also bring existing jewellery to be recycled and reimagined into something entirely new.",
     collections:
       "Each collection has its own story — but all reflect the same unconventional spirit. Choose your metal, gemstones and finish to make any piece uniquely yours.",
     clientJourney: {

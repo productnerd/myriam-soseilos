@@ -28,9 +28,9 @@ export function NebulaBackground() {
       const n3y = 70 + 15 * Math.cos(t * Math.PI * 2 * 0.5 + 2);
 
       target.style.background = `
-        radial-gradient(ellipse 60% 50% at ${n1x}% ${n1y}%, rgba(30, 40, 80, 0.6) 0%, transparent 70%),
-        radial-gradient(ellipse 55% 60% at ${n2x}% ${n2y}%, rgba(35, 48, 90, 0.5) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 45% at ${n3x}% ${n3y}%, rgba(25, 35, 70, 0.55) 0%, transparent 65%)
+        radial-gradient(ellipse 60% 50% at ${n1x}% ${n1y}%, rgba(18, 25, 55, 0.6) 0%, transparent 70%),
+        radial-gradient(ellipse 55% 60% at ${n2x}% ${n2y}%, rgba(22, 30, 60, 0.5) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 45% at ${n3x}% ${n3y}%, rgba(15, 22, 48, 0.55) 0%, transparent 65%)
       `;
 
       frame = requestAnimationFrame(animate);

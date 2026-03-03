@@ -52,9 +52,9 @@ export function BespokeSection() {
                 {siteContent.bespoke.description}
               </p>
               <p className="mt-4 text-foreground/60 leading-relaxed">
-                Each piece is a deeply personal collaboration. Myriam works
-                closely with you to bring your vision to life, from initial
-                concept through to the finished creation.
+                Every commission starts with a conversation and becomes a deeply
+                personal collaboration. No templates, no compromises — your
+                story, your way.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>

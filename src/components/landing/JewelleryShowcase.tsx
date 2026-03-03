@@ -18,7 +18,7 @@ export function JewelleryShowcase() {
             The Collection
           </p>
           <h2 className="text-display-lg">
-            Handcrafted Pieces
+            What If?
           </h2>
         </AnimatedSection>
 
