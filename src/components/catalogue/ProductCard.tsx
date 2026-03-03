@@ -33,7 +33,9 @@ export function ProductCard({ product }: Props) {
           {product.name}
         </h3>
         <p className="text-sm text-muted">
-          From &pound;{product.price.toLocaleString()}
+          {product.price
+            ? `From \u00A3${product.price.toLocaleString()}`
+            : "Price on request"}
         </p>
       </div>
     </Link>

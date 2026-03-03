@@ -23,7 +23,7 @@ export function StorySection() {
             The Designer
           </motion.p>
           <motion.h1 variants={fadeUp} className="text-display-lg">
-            From Vogue Intern to Osmium Pioneer
+            But What Does It Do?
           </motion.h1>
         </motion.div>
 

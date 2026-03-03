@@ -35,16 +35,20 @@ export function ProductInfo({ product }: Props) {
         {product.name}
       </motion.h1>
 
-      <motion.p variants={fadeUp} className="mt-4 text-2xl">
-        &pound;{product.price.toLocaleString()}
-      </motion.p>
-
-      <motion.p
-        variants={fadeUp}
-        className="mt-2 text-xs text-muted"
-      >
-        VAT included (UK/EU only)
-      </motion.p>
+      {product.price ? (
+        <>
+          <motion.p variants={fadeUp} className="mt-4 text-2xl">
+            &pound;{product.price.toLocaleString()}
+          </motion.p>
+          <motion.p variants={fadeUp} className="mt-2 text-xs text-muted">
+            VAT included (UK/EU only)
+          </motion.p>
+        </>
+      ) : (
+        <motion.p variants={fadeUp} className="mt-4 text-lg text-accent">
+          Price on request
+        </motion.p>
+      )}
 
       <motion.div
         variants={fadeUp}

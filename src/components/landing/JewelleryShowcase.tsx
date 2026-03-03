@@ -3,11 +3,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { products } from "@/data/products";
+import { products, Product } from "@/data/products";
 import { getCollectionBySlug } from "@/data/collections";
 import { fadeUp, staggerContainer, imageHoverZoom } from "@/lib/animations";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
+
+// Show only the first 5 products that have unique real images (not category fallbacks)
+const FALLBACK_IMAGES = ["rings.webp", "earrings2.webp", "bracelets.webp", "necklaces.webp"];
+const featured = products
+  .filter((p) => !FALLBACK_IMAGES.some((f) => p.images[0].src.includes(f)))
+  .slice(0, 5);
 
 export function JewelleryShowcase() {
   return (
@@ -32,15 +38,15 @@ export function JewelleryShowcase() {
         >
           {/* First row — equal height */}
           <motion.div variants={fadeUp} className="lg:col-span-7 h-full">
-            <ProductShowcaseCard product={products[0]} aspectClass="aspect-[4/3] lg:aspect-auto lg:h-[420px]" />
+            <ProductShowcaseCard product={featured[0]} aspectClass="aspect-[4/3] lg:aspect-auto lg:h-[420px]" />
           </motion.div>
 
           <motion.div variants={fadeUp} className="lg:col-span-5 h-full">
-            <ProductShowcaseCard product={products[1]} aspectClass="aspect-[4/3] lg:aspect-auto lg:h-[420px]" />
+            <ProductShowcaseCard product={featured[1]} aspectClass="aspect-[4/3] lg:aspect-auto lg:h-[420px]" />
           </motion.div>
 
           {/* Three items in a row */}
-          {products.slice(2).map((product) => (
+          {featured.slice(2).map((product) => (
             <motion.div key={product.slug} variants={fadeUp} className="lg:col-span-4">
               <ProductShowcaseCard product={product} aspectClass="aspect-square" />
             </motion.div>
@@ -61,7 +67,7 @@ function ProductShowcaseCard({
   product,
   aspectClass,
 }: {
-  product: (typeof products)[0];
+  product: Product;
   aspectClass: string;
 }) {
   const collection = getCollectionBySlug(product.collection);
@@ -88,7 +94,9 @@ function ProductShowcaseCard({
             {product.name}
           </h3>
           <p className="text-sm text-foreground/60 mt-1">
-            From &pound;{product.price.toLocaleString()}
+            {product.price
+              ? `From \u00A3${product.price.toLocaleString()}`
+              : "Price on request"}
           </p>
         </div>
       </div>
