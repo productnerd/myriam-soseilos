@@ -51,7 +51,7 @@ export function PressSection() {
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
             Press &amp; Features
           </p>
-          <h2 className="font-serif text-display-lg">As Seen In</h2>
+          <h2 className="text-display-lg">As Seen In</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -78,7 +78,7 @@ export function PressSection() {
                 {LogoComponent ? (
                   <LogoComponent className="w-full max-w-[160px] h-10 text-foreground/60" />
                 ) : (
-                  <span className="font-serif text-lg text-foreground/60">
+                  <span className="text-lg text-foreground/60">
                     {feature.name}
                   </span>
                 )}

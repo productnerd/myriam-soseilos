@@ -28,7 +28,7 @@ export default function BespokePage() {
 
       {/* Bottom CTA */}
       <AnimatedSection className="text-center mt-20 md:mt-28">
-        <h2 className="font-serif text-display-md mb-4">
+        <h2 className="text-display-md mb-4">
           Begin Your Story
         </h2>
         <p className="text-foreground/50 max-w-lg mx-auto leading-relaxed mb-8">

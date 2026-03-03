@@ -23,7 +23,7 @@ export function BespokePiece({ piece, isLast, index }: Props) {
         <p className="text-[10px] tracking-[0.3em] uppercase text-muted mb-3">
           {piece.subtitle}
         </p>
-        <h2 className="font-serif text-display-md">{piece.title}</h2>
+        <h2 className="text-display-md">{piece.title}</h2>
       </AnimatedSection>
 
       {/* Metadata bar */}

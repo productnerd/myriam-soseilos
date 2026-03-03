@@ -49,7 +49,7 @@ export function Hero() {
         </motion.p>
         <motion.h1
           variants={fadeUp}
-          className="font-serif text-display-xl text-foreground"
+          className="text-display-xl text-foreground"
         >
           Myriam Soseilos
         </motion.h1>

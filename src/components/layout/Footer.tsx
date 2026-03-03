@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -10,10 +11,8 @@ export function Footer() {
           <div>
             <Link href="/">
               <Image
-                src="/logo.png"
+                src={logo}
                 alt="Myriam Soseilos"
-                width={160}
-                height={80}
                 className="h-14 w-auto invert"
               />
             </Link>

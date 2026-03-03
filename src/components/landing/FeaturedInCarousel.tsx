@@ -22,7 +22,7 @@ export function FeaturedInCarousel() {
               {LogoComponent ? (
                 <LogoComponent className="w-auto h-7 text-foreground/30 hover:text-foreground/60 transition-colors" />
               ) : (
-                <span className="whitespace-nowrap font-serif text-lg text-foreground/30 hover:text-foreground/60 transition-colors">
+                <span className="whitespace-nowrap text-lg text-foreground/30 hover:text-foreground/60 transition-colors">
                   {feature.name}
                 </span>
               )}

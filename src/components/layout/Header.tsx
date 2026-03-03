@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "@/assets/logo.png";
 
 const leftLinks = [
   { href: "/catalogue", label: "Collection" },
@@ -67,10 +68,8 @@ export function Header() {
             className="absolute left-1/2 -translate-x-1/2 hover:opacity-60 transition-opacity duration-300 delay-75"
           >
             <Image
-              src="/logo.png"
+              src={logo}
               alt="Myriam Soseilos"
-              width={160}
-              height={80}
               className="h-14 w-auto invert"
               priority
             />
@@ -139,7 +138,7 @@ export function Header() {
                   <a
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-serif text-display-md text-foreground"
+                    className="text-display-md text-foreground"
                   >
                     {link.label}
                   </a>
@@ -147,7 +146,7 @@ export function Header() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-serif text-display-md text-foreground"
+                    className="text-display-md text-foreground"
                   >
                     {link.label}
                   </Link>

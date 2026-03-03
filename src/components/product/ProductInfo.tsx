@@ -30,12 +30,12 @@ export function ProductInfo({ product }: Props) {
 
       <motion.h1
         variants={fadeUp}
-        className="font-serif text-display-md mt-3"
+        className="text-display-md mt-3"
       >
         {product.name}
       </motion.h1>
 
-      <motion.p variants={fadeUp} className="mt-4 font-serif text-2xl">
+      <motion.p variants={fadeUp} className="mt-4 text-2xl">
         &pound;{product.price.toLocaleString()}
       </motion.p>
 

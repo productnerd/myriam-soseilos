@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Cardo } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -17,13 +16,6 @@ const montserrat = localFont({
     { path: "../../public/fonts/Montserrat-SemiBoldItalic.otf", weight: "600", style: "italic" },
   ],
   variable: "--font-montserrat",
-  display: "swap",
-});
-
-const cardo = Cardo({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-cardo",
   display: "swap",
 });
 
@@ -50,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${cardo.variable}`}>
+    <html lang="en" className={montserrat.variable}>
       <body className="font-sans text-foreground antialiased">
         <NebulaBackground />
         {/* Noise grain overlay — fixed, covers entire viewport */}

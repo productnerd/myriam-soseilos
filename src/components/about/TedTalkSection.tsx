@@ -16,7 +16,7 @@ export function TedTalkSection() {
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
             TEDx Talk
           </p>
-          <h2 className="font-serif text-display-md">In Her Own Words</h2>
+          <h2 className="text-display-md">In Her Own Words</h2>
           <p className="mt-4 text-foreground/50 max-w-lg mx-auto leading-relaxed">
             {tedTalk.title}
           </p>

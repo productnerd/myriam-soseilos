@@ -15,7 +15,7 @@ export default function CataloguePage() {
         <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
           Browse
         </p>
-        <h1 className="font-serif text-display-lg">The Collection</h1>
+        <h1 className="text-display-lg">The Collection</h1>
         <p className="mt-5 text-foreground/50 max-w-lg mx-auto leading-relaxed text-sm">
           Each piece is handcrafted with ethically sourced materials. Every
           design can be customised to your specifications. To purchase or

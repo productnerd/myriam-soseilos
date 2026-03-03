@@ -17,7 +17,7 @@ export function AwardsCarousel() {
               {award.type === "winner" ? "Winner" : "Finalist"}
             </span>
             <span className="w-px h-4 bg-border" />
-            <span className="font-serif text-base text-foreground/80">
+            <span className="text-base text-foreground/80">
               {award.title}
             </span>
             <span className="text-xs text-muted">

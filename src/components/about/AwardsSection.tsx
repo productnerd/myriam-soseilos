@@ -22,7 +22,7 @@ export function AwardsSection() {
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
             Recognition
           </p>
-          <h2 className="font-serif text-display-lg">Awards &amp; Accolades</h2>
+          <h2 className="text-display-lg">Awards &amp; Accolades</h2>
         </motion.div>
 
         {/* Cards */}
@@ -57,16 +57,16 @@ export function AwardsSection() {
                   {LogoComponent ? (
                     <LogoComponent className="w-auto h-12 max-w-[200px] text-foreground/50" />
                   ) : (
-                    <span className="font-serif text-base text-foreground/50">
+                    <span className="text-base text-foreground/50">
                       {award.organization}
                     </span>
                   )}
                 </div>
 
-                <span className="text-xl font-serif text-foreground/20 mb-3">
+                <span className="text-xl text-foreground/20 mb-3">
                   {award.year}
                 </span>
-                <h3 className="font-serif text-lg text-accent/80">
+                <h3 className="text-lg text-accent/80">
                   {award.title}
                 </h3>
               </motion.div>

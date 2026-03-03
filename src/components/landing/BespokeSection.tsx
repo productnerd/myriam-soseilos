@@ -43,7 +43,7 @@ export function BespokeSection() {
               <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
                 Made for You
               </p>
-              <h2 className="font-serif text-display-lg">
+              <h2 className="text-display-lg">
                 {siteContent.bespoke.heading}
               </h2>
             </AnimatedSection>

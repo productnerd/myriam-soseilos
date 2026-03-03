@@ -17,7 +17,7 @@ export function JewelleryShowcase() {
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
             The Collection
           </p>
-          <h2 className="font-serif text-display-lg">
+          <h2 className="text-display-lg">
             Handcrafted Pieces
           </h2>
         </AnimatedSection>
@@ -84,7 +84,7 @@ function ProductShowcaseCard({
           <p className="text-xs tracking-[0.2em] uppercase text-accent">
             {collection?.name}
           </p>
-          <h3 className="font-serif text-lg text-foreground mt-1">
+          <h3 className="text-lg text-foreground mt-1">
             {product.name}
           </h3>
           <p className="text-sm text-foreground/60 mt-1">

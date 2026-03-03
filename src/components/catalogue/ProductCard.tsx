@@ -29,7 +29,7 @@ export function ProductCard({ product }: Props) {
         <p className="text-[10px] tracking-[0.2em] uppercase text-muted">
           {collection?.name}
         </p>
-        <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors duration-300">
+        <h3 className="text-lg text-foreground group-hover:text-accent transition-colors duration-300">
           {product.name}
         </h3>
         <p className="text-sm text-muted">

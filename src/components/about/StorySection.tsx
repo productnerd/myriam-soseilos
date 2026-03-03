@@ -22,7 +22,7 @@ export function StorySection() {
           >
             The Designer
           </motion.p>
-          <motion.h1 variants={fadeUp} className="font-serif text-display-lg">
+          <motion.h1 variants={fadeUp} className="text-display-lg">
             From Vogue Intern to Osmium Pioneer
           </motion.h1>
         </motion.div>

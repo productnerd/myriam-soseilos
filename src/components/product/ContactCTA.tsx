@@ -11,7 +11,7 @@ export function ContactCTA({ product }: Props) {
 
   return (
     <div className="mt-10 p-6 bg-surface rounded-lg border border-border">
-      <h3 className="font-serif text-lg">Interested in this piece?</h3>
+      <h3 className="text-lg">Interested in this piece?</h3>
       <p className="mt-3 text-sm text-foreground/50 leading-relaxed">
         Each piece is made to order and can be fully customised — materials,
         gemstones, and sizing adjusted to your preferences. Contact Myriam

@@ -18,7 +18,7 @@ export function BespokeHeader() {
       >
         Made for You
       </motion.p>
-      <motion.h1 variants={fadeUp} className="font-serif text-display-lg">
+      <motion.h1 variants={fadeUp} className="text-display-lg">
         Bespoke Jewellery
       </motion.h1>
       <motion.p

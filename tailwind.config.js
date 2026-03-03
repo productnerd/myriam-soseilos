@@ -17,7 +17,6 @@ module.exports = {
         border: "#2a2a2a",
       },
       fontFamily: {
-        serif: ["var(--font-cardo)", "Georgia", "serif"],
         sans: ["var(--font-montserrat)", "system-ui", "sans-serif"],
       },
       fontSize: {

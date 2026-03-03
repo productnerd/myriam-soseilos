@@ -13,7 +13,7 @@ export function SustainabilitySection() {
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
             Our Commitment
           </p>
-          <h2 className="font-serif text-display-lg">
+          <h2 className="text-display-lg">
             Ethical &amp; Sustainable
           </h2>
           <p className="mt-6 text-foreground/50 leading-relaxed">
