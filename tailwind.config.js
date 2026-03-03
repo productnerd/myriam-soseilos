@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         serif: ["var(--font-cardo)", "Georgia", "serif"],
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: ["var(--font-montserrat)", "system-ui", "sans-serif"],
       },
       fontSize: {
         "display-xl": [

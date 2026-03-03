@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -7,15 +8,21 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="font-serif text-xl text-foreground">
-              Myriam Soseilos
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="Myriam Soseilos"
+                width={160}
+                height={80}
+                className="h-14 w-auto invert"
+              />
             </Link>
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              Award-winning fine jewellery designer.
+            <p className="mt-4 text-sm text-muted leading-relaxed">
+              Audaciously different fine jewellery.
               <br />
-              Bold, unique designs inspired by architecture,
+              Inspired by architecture, space
               <br />
-              space and the wearer themselves.
+              and the wearer themselves.
             </p>
           </div>
 

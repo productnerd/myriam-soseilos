@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const leftLinks = [
   { href: "/catalogue", label: "Collection" },
@@ -63,9 +64,16 @@ export function Header() {
           {/* Logo — absolutely centered */}
           <Link
             href="/"
-            className="absolute left-1/2 -translate-x-1/2 font-serif text-lg tracking-[0.1em] text-foreground hover:opacity-60 transition-opacity duration-300 delay-75"
+            className="absolute left-1/2 -translate-x-1/2 hover:opacity-60 transition-opacity duration-300 delay-75"
           >
-            Myriam Soseilos
+            <Image
+              src="/logo.png"
+              alt="Myriam Soseilos"
+              width={160}
+              height={80}
+              className="h-14 w-auto invert"
+              priority
+            />
           </Link>
 
           {/* Right nav links */}

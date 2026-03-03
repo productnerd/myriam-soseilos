@@ -59,21 +59,24 @@ export function StorySection() {
               className="text-foreground/60 leading-relaxed mb-5"
             >
               It started at Vogue. During a traineeship at the magazine, Myriam
-              found herself quietly obsessed with the jewellery. She moved into
-              advertising, climbed the ranks, but kept making pieces at her
-              kitchen table. When strangers started offering to buy them, she
-              stopped pretending it was a hobby.
+              found herself quietly obsessed with the jewellery — not the safe,
+              predictable kind, but the pieces that made you stop and think. She
+              moved into advertising, climbed the ranks, but kept making pieces
+              at her kitchen table. When strangers started offering to buy them,
+              she stopped pretending it was a hobby.
             </motion.p>
             <motion.p
               variants={fadeUp}
               className="text-foreground/60 leading-relaxed mb-6"
             >
               Her early work was sharp and angular — architecture you could wear.
-              Then came magnets: she was one of the first fine jewellers to embed
-              them into precious metal, letting a single piece be worn in ten
-              different configurations. She created a ring that shifts colour with
-              body temperature. She became one of the first designers in the world
-              to work with osmium — the densest naturally occurring element on Earth.
+              Then came the question that drives everything she does: &ldquo;what
+              else could it do?&rdquo; She was one of the first fine jewellers
+              to embed magnets into precious metal, letting a single piece be
+              worn in ten different configurations. She created a ring that
+              shifts colour with body temperature. She became one of the first
+              designers in the world to work with osmium — the densest naturally
+              occurring element on Earth.
             </motion.p>
             <motion.div
               variants={fadeIn}
@@ -130,9 +133,11 @@ export function StorySection() {
               variants={fadeUp}
               className="text-foreground/60 leading-relaxed"
             >
-              Myriam doesn&apos;t design jewellery that blends in. She creates bold,
-              unconventional pieces that empower the people who wear them to be
-              unapologetically themselves.
+              Myriam doesn&apos;t design jewellery that blends in. Her pieces are
+              for the bold of heart — the ones who dare to show their true
+              selves. Less &ldquo;look at me&rdquo;, more &ldquo;this is who I
+              am&rdquo;. When you wear a Myriam Soseilos piece, you&apos;re
+              joining a group of one.
             </motion.p>
           </motion.div>
         </div>

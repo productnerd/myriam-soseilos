@@ -3,9 +3,9 @@ const IMG_BASE = "https://myriamsos.co.uk/wp-content/uploads/2024/02";
 export const siteContent = {
   brand: {
     name: "Myriam Soseilos",
-    tagline: "Award-winning fine jewellery",
+    tagline: "Audaciously different fine jewellery",
     heroSubtitle:
-      "Bold, unique designs inspired by architecture, space and the wearer themselves",
+      "Unconventional designs inspired by architecture, space and the wearer themselves. For the ones who dare to be different.",
   },
   about: {
     intro:
@@ -15,7 +15,7 @@ export const siteContent = {
     evolution:
       "Her early collections were defined by sharp, angular, architectural forms. Over time her style evolved to incorporate movement and transformation — pieces that shift, twist and change with the wearer. She pioneered the use of magnets in fine jewellery, allowing pieces to be worn in multiple configurations. She created a ring that changes colour with body temperature, and was one of the first jewellery designers to work with osmium, the world's densest naturally occurring element.",
     philosophy:
-      "Myriam plays with innovative techniques, unconventional materials and challenges the functionality of jewellery itself. She creates bold and unique designs that empower the wearer to be themselves, express their individuality and be different.",
+      "Nothing Myriam creates is conventional. Whether it's straight-line geometric shapes, architectural influences, or flexible pieces that transform and adapt — there's nothing quite like it on the market. Her designs are incomparable and impossible to replicate, because they come from a fiercely creative and individual mind.",
     tedTalk: {
       url: "https://www.youtube.com/watch?v=GHxo5kTgqHo",
       title: "Myriam's TEDx talk on the intersection of jewellery, art and identity",
@@ -37,7 +37,7 @@ export const siteContent = {
     description:
       "Myriam creates fully custom, one-of-a-kind pieces — engagement rings born from shared memories, heirloom transformations that bridge generations, statement pieces that capture a moment in time. Each commission is a deeply personal collaboration, moving from concept to finished piece in just 3 to 4 weeks. Using precision 3D modelling, every detail is perfected before casting at a specialist atelier in Athens and hand-finishing in Cyprus or the UK. Clients can also bring existing jewellery to be recycled and reimagined into something entirely new.",
     collections:
-      "Myriam's collections are semi-bespoke — ready-to-wear designs that can be customised to your preferences. Choose your metal, gemstones and finish to make any collection piece uniquely yours.",
+      "Each collection has its own story — but all reflect the same unconventional spirit. Choose your metal, gemstones and finish to make any piece uniquely yours.",
     clientJourney: {
       consultation: "Every piece begins with a conversation. Myriam meets with each client to understand their story, style and vision.",
       design: "Using 3DesignCad, Myriam creates detailed digital models that bring your concept to life before any metal is touched.",

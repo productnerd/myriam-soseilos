@@ -45,7 +45,7 @@ export function Hero() {
           variants={fadeUp}
           className="text-xs tracking-[0.35em] uppercase text-accent mb-6"
         >
-          Fine Jewellery
+          Audaciously Different
         </motion.p>
         <motion.h1
           variants={fadeUp}

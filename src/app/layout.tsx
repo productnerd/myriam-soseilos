@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
-import { Inter, Cardo } from "next/font/google";
+import localFont from "next/font/local";
+import { Cardo } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { NebulaBackground } from "@/components/ui/NebulaBackground";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+const montserrat = localFont({
+  src: [
+    { path: "../../public/fonts/Montserrat-Light.otf", weight: "300", style: "normal" },
+    { path: "../../public/fonts/Montserrat-LightItalic.otf", weight: "300", style: "italic" },
+    { path: "../../public/fonts/Montserrat-Regular.otf", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Montserrat-Italic.otf", weight: "400", style: "italic" },
+    { path: "../../public/fonts/Montserrat-SemiBold.otf", weight: "600", style: "normal" },
+    { path: "../../public/fonts/Montserrat-SemiBoldItalic.otf", weight: "600", style: "italic" },
+  ],
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -25,10 +33,10 @@ export const metadata: Metadata = {
     template: "%s | Myriam Soseilos",
   },
   description:
-    "Award-winning fine jewellery designer. Bold, unique designs inspired by architecture, space and the wearer themselves.",
+    "Audaciously different fine jewellery. Bold, unconventional designs inspired by architecture, space and the wearer themselves.",
   openGraph: {
     title: "Myriam Soseilos | Fine Jewellery",
-    description: "Award-winning fine jewellery designer.",
+    description: "Audaciously different fine jewellery.",
     url: "https://myriamsos.co.uk",
     siteName: "Myriam Soseilos",
     locale: "en_GB",
@@ -42,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${cardo.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${cardo.variable}`}>
       <body className="font-sans text-foreground antialiased">
         <NebulaBackground />
         {/* Noise grain overlay — fixed, covers entire viewport */}
