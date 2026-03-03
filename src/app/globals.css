@@ -10,24 +10,24 @@
   }
 
   body {
-    color: #f5f0eb;
+    color: #e8ecf5;
     /* Static base gradient */
     background:
       linear-gradient(
         180deg,
-        #0c0a08 0%,
-        #14110d 25%,
-        #1e1812 50%,
-        #28211a 70%,
-        #302820 85%,
-        #382e24 100%
+        #080c18 0%,
+        #0c1122 25%,
+        #111838 50%,
+        #162044 70%,
+        #1a264e 85%,
+        #1e2c56 100%
       )
       fixed;
   }
 
   ::selection {
-    background-color: #d4c5b0;
-    color: #0a0a0a;
+    background-color: #8ba0c4;
+    color: #0a0e1a;
   }
 
   /* Custom square cursor */
@@ -43,7 +43,7 @@
   left: 0;
   width: 20px;
   height: 20px;
-  border: 1.5px solid rgba(245, 240, 235, 0.5);
+  border: 1.5px solid rgba(232, 236, 245, 0.5);
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
@@ -51,17 +51,17 @@
 }
 
 .custom-cursor.active {
-  background-color: rgba(245, 240, 235, 0.3);
-  border-color: rgba(245, 240, 235, 0.7);
+  background-color: rgba(232, 236, 245, 0.3);
+  border-color: rgba(232, 236, 245, 0.7);
   transform: translate(-50%, -50%) scale(0.85);
 }
 
 /* Dark cursor for light backgrounds */
 .custom-cursor.on-light {
-  border-color: rgba(10, 10, 8, 0.5);
+  border-color: rgba(10, 14, 26, 0.5);
 }
 
 .custom-cursor.on-light.active {
-  background-color: rgba(10, 10, 8, 0.3);
-  border-color: rgba(10, 10, 8, 0.7);
+  background-color: rgba(10, 14, 26, 0.3);
+  border-color: rgba(10, 14, 26, 0.7);
 }

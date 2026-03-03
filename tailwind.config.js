@@ -8,13 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
-        foreground: "#f5f0eb",
-        accent: "#d4c5b0",
-        "accent-light": "#e8ddd0",
-        muted: "#8a8178",
-        surface: "rgba(10, 10, 8, 0.45)",
-        border: "#2a2a2a",
+        background: "#0a0e1a",
+        foreground: "#e8ecf5",
+        accent: "#8ba0c4",
+        "accent-light": "#a8bad4",
+        muted: "#6b7a94",
+        surface: "rgba(12, 16, 30, 0.45)",
+        border: "#1c2238",
+        pink: "#c94b6c",
+        "pink-dark": "#8c3b5e",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)", "system-ui", "sans-serif"],
