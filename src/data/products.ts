@@ -34,7 +34,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/CD_P_Triangle_WG_WS_PWD_P-scaled-1.webp`, alt: "Constellations Triangle Pendant" },
+      { src: "/images/products/constellations-triangle-2.jpg", alt: "Constellations Triangle 2", type: "image" as const },
     ],
   },
   {
@@ -50,8 +50,8 @@ export const products: Product[] = [
     gems: ["Osmium", "White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/CD_P_Osmium_WG_O_WS_P1.webp`, alt: "Osmium Pendant - front" },
-      { src: `${IMG_BASE}/CD_P_Osmium_WG_O_WS_P2.webp`, alt: "Osmium Pendant - detail" },
+      { src: "/images/products/osmium.jpg", alt: "Osmium", type: "image" as const },
+      { src: "/images/products/osmium-2.jpg", alt: "Osmium 2", type: "image" as const },
     ],
   },
   {
@@ -83,7 +83,8 @@ export const products: Product[] = [
     gems: [],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/Aquilla-ring-PRODUCT.webp`, alt: "Aquilla Ring" },
+      { src: "/images/products/aquilla-ring.jpg", alt: "Aquilla Ring", type: "image" as const },
+      { src: "/images/products/aquilla-ring-2.jpg", alt: "Aquilla Ring 2", type: "image" as const },
     ],
   },
   {
@@ -99,7 +100,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Cosmic Dust collection" },
+      { src: "/images/products/astral.jpg", alt: "Astral", type: "image" as const },
     ],
   },
   {
@@ -291,7 +292,7 @@ export const products: Product[] = [
     gems: [],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Cosmic Dust collection" },
+      { src: "/images/products/planet.jpg", alt: "Planet", type: "image" as const },
     ],
   },
   {
@@ -307,7 +308,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Cosmic Dust collection" },
+      { src: "/images/products/lakota-2.jpg", alt: "Lakota 2", type: "image" as const },
     ],
   },
   {
@@ -403,7 +404,7 @@ export const products: Product[] = [
     gems: ["White Sapphires", "White Diamonds"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Cosmic Dust collection" },
+      { src: "/images/products/constellations.jpg", alt: "Constellations", type: "image" as const },
     ],
   },
   {
@@ -451,7 +452,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/necklaces.webp`, alt: "Necklace from the Cosmic Dust collection" },
+      { src: "/images/products/astral-chain-short-small.jpg", alt: "Astral Chain Short Small", type: "image" as const },
+      { src: "/images/products/astral-chain-short-small-2.jpg", alt: "Astral Chain Short Small 2", type: "image" as const },
     ],
   },
   {
@@ -547,7 +549,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/necklaces.webp`, alt: "Necklace from the Cosmic Dust collection" },
+      { src: "/images/products/constellations-small.jpg", alt: "Constellations Small", type: "image" as const },
     ],
   },
   {
@@ -659,7 +661,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Cosmic Dust collection" },
+      { src: "/images/products/constellations-4.jpg", alt: "Constellations 4", type: "image" as const },
     ],
   },
   {
@@ -675,7 +677,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Cosmic Dust collection" },
+      { src: "/images/products/astral-regular.jpg", alt: "Astral Regular", type: "image" as const },
     ],
   },
   {
@@ -691,7 +693,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Cosmic Dust collection" },
+      { src: "/images/products/astral-double-finger.jpg", alt: "Astral Double Finger", type: "image" as const },
     ],
   },
   {
@@ -723,7 +725,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Cosmic Dust collection" },
+      { src: "/images/products/constellations-2.jpg", alt: "Constellations 2", type: "image" as const },
     ],
   },
   {
@@ -755,7 +757,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Cosmic Dust collection" },
+      { src: "/images/products/lakota-3.jpg", alt: "Lakota 3", type: "image" as const },
     ],
   },
   {
@@ -803,7 +805,8 @@ export const products: Product[] = [
     gems: ["White Sapphires", "White Diamonds"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Cosmic Dust collection" },
+      { src: "/images/products/constellations-cluster.jpg", alt: "Constellations Cluster", type: "image" as const },
+      { src: "/images/products/constellations-cluster-2.jpg", alt: "Constellations Cluster 2", type: "image" as const },
     ],
   },
   {
@@ -819,7 +822,9 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Jagged collection" },
+      { src: "/images/products/jagged-tennis-plain.jpg", alt: "Jagged Tennis Plain", type: "image" as const },
+      { src: "/images/products/jagged-tennis-plain-2.jpg", alt: "Jagged Tennis Plain 2", type: "image" as const },
+      { src: "/images/products/jagged-tennis-plain-3.jpg", alt: "Jagged Tennis Plain 3", type: "image" as const },
     ],
   },
   {
@@ -835,7 +840,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Jagged collection" },
+      { src: "/images/products/jagged.jpg", alt: "Jagged", type: "image" as const },
     ],
   },
   {
@@ -851,7 +856,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Jagged collection" },
+      { src: "/images/products/jagged-chain-bracelet.jpg", alt: "Jagged Chain Bracelet", type: "image" as const },
+      { src: "/images/products/jagged-chain-bracelet-2.jpg", alt: "Jagged Chain Bracelet 2", type: "image" as const },
     ],
   },
   {
@@ -867,7 +873,8 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Black Spinels"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Jagged collection" },
+      { src: "/images/products/jagged-stick-chain-bracelet.jpg", alt: "Jagged Stick Chain Bracelet", type: "image" as const },
+      { src: "/images/products/jagged-stick-chain-bracelet-2.jpg", alt: "Jagged Stick Chain Bracelet 2", type: "image" as const },
     ],
   },
   {
@@ -883,7 +890,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Jagged collection" },
+      { src: "/images/products/jagged-bracelet.jpg", alt: "Jagged Bracelet", type: "image" as const },
+      { src: "/images/products/jagged-bracelet-2.jpg", alt: "Jagged Bracelet 2", type: "image" as const },
     ],
   },
   {
@@ -899,7 +907,8 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Citrine"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Jagged collection" },
+      { src: "/images/products/jagged-flexi-earring.jpg", alt: "Jagged Flexi Earring", type: "image" as const },
+      { src: "/images/products/jagged-flexi-earring-2.jpg", alt: "Jagged Flexi Earring 2", type: "image" as const },
     ],
   },
   {
@@ -947,7 +956,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Jagged collection" },
+      { src: "/images/products/jagged-conch-earring-small-loop-earring.jpg", alt: "Jagged Conch Earring Small Loop Earring", type: "image" as const },
+      { src: "/images/products/jagged-conch-earring-small-loop-earring-2.jpg", alt: "Jagged Conch Earring Small Loop Earring 2", type: "image" as const },
     ],
   },
   {
@@ -963,7 +973,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Jagged collection" },
+      { src: "/images/products/jagged-hair-pinearring.jpg", alt: "Jagged Hair Pinearring", type: "image" as const },
+      { src: "/images/products/jagged-hair-pinearring-2.jpg", alt: "Jagged Hair Pinearring 2", type: "image" as const },
     ],
   },
   {
@@ -995,7 +1006,11 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Jagged collection" },
+      { src: "/images/products/jagged-mix-n-match-chain-earrings-stud.jpg", alt: "Jagged Mix N Match Chain Earrings Stud", type: "image" as const },
+      { src: "/images/products/jagged-mix-n-match-chain-earrings.jpg", alt: "Jagged Mix N Match Chain Earrings", type: "image" as const },
+      { src: "/images/products/jagged-mix-n-match-chain-earrings-model.jpg", alt: "Jagged Mix N Match Chain Earrings Model", type: "image" as const },
+      { src: "/images/products/jagged-mix-n-match-chain-earrings-model2.jpg", alt: "Jagged Mix N Match Chain Earrings Model2", type: "image" as const },
+      { src: "/images/products/jagged-mix-n-match-chain-earrings-model3.jpg", alt: "Jagged Mix N Match Chain Earrings Model3", type: "image" as const },
     ],
   },
   {
@@ -1011,7 +1026,9 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Jagged collection" },
+      { src: "/images/products/chain-earring.jpg", alt: "Chain Earring", type: "image" as const },
+      { src: "/images/products/chain-earring-2.jpg", alt: "Chain Earring 2", type: "image" as const },
+      { src: "/images/products/chain-earring-model.jpg", alt: "Chain Earring Model", type: "image" as const },
     ],
   },
   {
@@ -1091,7 +1108,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/necklaces.webp`, alt: "Necklace from the Jagged collection" },
+      { src: "/images/products/jagged-choker.jpg", alt: "Jagged Choker", type: "image" as const },
     ],
   },
   {
@@ -1107,7 +1124,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/necklaces.webp`, alt: "Necklace from the Jagged collection" },
+      { src: "/images/products/jagged-chain-choker.jpg", alt: "Jagged Chain Choker", type: "image" as const },
     ],
   },
   {
@@ -1155,7 +1172,8 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Blue Sapphires"],
     metalColor: "Silver",
     images: [
-      { src: `${IMG_BASE}/necklaces.webp`, alt: "Necklace from the Jagged collection" },
+      { src: "/images/products/cluster-pendant.jpg", alt: "Cluster Pendant", type: "image" as const },
+      { src: "/images/products/cluster-pendant-2.jpg", alt: "Cluster Pendant 2", type: "image" as const },
     ],
   },
   {
@@ -1171,7 +1189,8 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Blue Sapphires"],
     metalColor: "Silver",
     images: [
-      { src: `${IMG_BASE}/necklaces.webp`, alt: "Necklace from the Jagged collection" },
+      { src: "/images/products/stick-pendant.jpg", alt: "Stick Pendant", type: "image" as const },
+      { src: "/images/products/stick-pendant-2.jpg", alt: "Stick Pendant 2", type: "image" as const },
     ],
   },
   {
@@ -1267,7 +1286,10 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Blue Sapphires", "Rubies"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Jagged collection" },
+      { src: "/images/products/ringpendant.jpg", alt: "Ringpendant", type: "image" as const },
+      { src: "/images/products/ringpendant-ring.jpg", alt: "Ringpendant Ring", type: "image" as const },
+      { src: "/images/products/ringpendant-model.jpg", alt: "Ringpendant Model", type: "image" as const },
+      { src: "/images/products/ringpendant-2.jpg", alt: "Ringpendant 2", type: "image" as const },
     ],
   },
   {
@@ -1283,7 +1305,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Jagged collection" },
+      { src: "/images/products/jagged-eternity-ring-mediumlowflat-height.jpg", alt: "Jagged Eternity Ring Mediumlowflat Height", type: "image" as const },
     ],
   },
   {
@@ -1299,7 +1321,7 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Blue Sapphires"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Jagged collection" },
+      { src: "/images/products/inside-out-ring.jpg", alt: "Inside Out Ring", type: "image" as const },
     ],
   },
   {
@@ -1315,7 +1337,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Jagged collection" },
+      { src: "/images/products/jagged-flex-triangle.jpg", alt: "Jagged Flex Triangle", type: "image" as const },
+      { src: "/images/products/jagged-flex-triangle-2.jpg", alt: "Jagged Flex Triangle 2", type: "image" as const },
     ],
   },
   {
@@ -1331,7 +1354,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "Silver",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Jagged collection" },
+      { src: "/images/products/jagged-flexi-x4.jpg", alt: "Jagged Flexi X4", type: "image" as const },
+      { src: "/images/products/jagged-flexi-x4-2.jpg", alt: "Jagged Flexi X4 2", type: "image" as const },
     ],
   },
   {
@@ -1379,7 +1403,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "Silver",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Jagged collection" },
+      { src: "/images/products/twirl-top.jpg", alt: "Twirl Top", type: "image" as const },
     ],
   },
   {
@@ -1523,7 +1547,8 @@ export const products: Product[] = [
     gems: ["Black Spinels", "White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/eternity-square-on-square-ring.jpg", alt: "Eternity Square On Square Ring", type: "image" as const },
+      { src: "/images/products/eternity-square-on-square-ring-2.jpg", alt: "Eternity Square On Square Ring 2", type: "image" as const },
     ],
   },
   {
@@ -1539,7 +1564,8 @@ export const products: Product[] = [
     gems: ["Black Spinels", "White Sapphires"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/eternity-double-finger-square-ring.jpg", alt: "Eternity Double Finger Square Ring", type: "image" as const },
+      { src: "/images/products/eternity-double-finger-square-ring-2.jpg", alt: "Eternity Double Finger Square Ring 2", type: "image" as const },
     ],
   },
   {
@@ -1555,7 +1581,7 @@ export const products: Product[] = [
     gems: ["Pink Sapphires", "Black Spinels"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/eternity-cross-ring.jpg", alt: "Eternity Cross Ring", type: "image" as const },
     ],
   },
   {
@@ -1603,7 +1629,7 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Rubies"],
     metalColor: "Silver",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/l-ring.jpg", alt: "L Ring", type: "image" as const },
     ],
   },
   {
@@ -1619,7 +1645,8 @@ export const products: Product[] = [
     gems: ["Black Spinels", "White Sapphires", "Aquamarine"],
     metalColor: "Black Rhodium",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/eternity-square-ring.jpg", alt: "Eternity Square Ring", type: "image" as const },
+      { src: "/images/products/eternity-square-ring-2.jpg", alt: "Eternity Square Ring 2", type: "image" as const },
     ],
   },
   {
@@ -1635,7 +1662,8 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/z-ring.jpg", alt: "Z Ring", type: "image" as const },
+      { src: "/images/products/z-ring-2.jpg", alt: "Z Ring 2", type: "image" as const },
     ],
   },
   {
@@ -1651,7 +1679,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/pin-ring.jpg", alt: "Pin Ring", type: "image" as const },
     ],
   },
   {
@@ -1667,7 +1695,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/double-loop-ring.jpg", alt: "Double Loop Ring", type: "image" as const },
     ],
   },
   {
@@ -1683,7 +1711,7 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Naked Square collection" },
+      { src: "/images/products/cuddles-ring.jpg", alt: "Cuddles Ring", type: "image" as const },
     ],
   },
   {
@@ -2003,7 +2031,7 @@ export const products: Product[] = [
     gems: [],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Otherworldly collection" },
+      { src: "/images/products/lyra-ring.jpg", alt: "Lyra Ring", type: "image" as const },
     ],
   },
   {
@@ -2051,7 +2079,10 @@ export const products: Product[] = [
     gems: ["White Sapphires"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Otherworldly collection" },
+      { src: "/images/products/aeternum-ring.jpg", alt: "Aeternum Ring", type: "image" as const },
+      { src: "/images/products/aeternum-ring-2.jpg", alt: "Aeternum Ring 2", type: "image" as const },
+      { src: "/images/products/aeternum-ring-model.jpg", alt: "Aeternum Ring Model", type: "image" as const },
+      { src: "/images/products/aeternum-ring-3.jpg", alt: "Aeternum Ring 3", type: "image" as const },
     ],
   },
   {
@@ -2083,7 +2114,7 @@ export const products: Product[] = [
     gems: ["White Sapphires", "White Diamonds"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Skyline collection" },
+      { src: "/images/products/velodrome-bracelet.jpg", alt: "Velodrome Bracelet", type: "image" as const },
     ],
   },
   {
@@ -2099,7 +2130,7 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Black Spinels"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/bracelets.webp`, alt: "Bracelet from the Skyline collection" },
+      { src: "/images/products/allianz-bracelet.jpg", alt: "Allianz Bracelet", type: "image" as const },
     ],
   },
   {
@@ -2179,7 +2210,8 @@ export const products: Product[] = [
     gems: ["Black Spinels"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/earrings2.webp`, alt: "Earring from the Skyline collection" },
+      { src: "/images/products/hallgrimur-earrings.jpg", alt: "Hallgrimur Earrings", type: "image" as const },
+      { src: "/images/products/hallgrimur-earrings-2.jpg", alt: "Hallgrimur Earrings 2", type: "image" as const },
     ],
   },
   {
@@ -2387,7 +2419,7 @@ export const products: Product[] = [
     gems: ["White Sapphires", "White Diamonds"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Skyline collection" },
+      { src: "/images/products/power-ring.jpg", alt: "Power Ring", type: "image" as const },
     ],
   },
   {
@@ -2419,7 +2451,7 @@ export const products: Product[] = [
     gems: ["Peridot", "Aquamarine", "White Diamonds"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Skyline collection" },
+      { src: "/images/products/empire-ring.jpg", alt: "Empire Ring", type: "image" as const },
     ],
   },
   {
@@ -2435,7 +2467,7 @@ export const products: Product[] = [
     gems: ["White Diamonds"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Skyline collection" },
+      { src: "/images/products/o2-ring.jpg", alt: "O2 Ring", type: "image" as const },
     ],
   },
   {
@@ -2595,7 +2627,10 @@ export const products: Product[] = [
     gems: ["Aquamarine"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/necklaces.webp`, alt: "Necklace from the Sosie collection" },
+      { src: "/images/products/good-luck-pendant.jpg", alt: "Good Luck Pendant", type: "image" as const },
+      { src: "/images/products/good-luck-pendant-2.jpg", alt: "Good Luck Pendant 2", type: "image" as const },
+      { src: "/images/products/good-luck-pendant-model.jpg", alt: "Good Luck Pendant Model", type: "image" as const },
+      { src: "/images/products/good-luck-pendant-model2.jpg", alt: "Good Luck Pendant Model2", type: "image" as const },
     ],
   },
   {
@@ -2628,7 +2663,9 @@ export const products: Product[] = [
     gems: ["Aquamarine"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Sosie collection" },
+      { src: "/images/products/sose-ring.jpg", alt: "Sose Ring", type: "image" as const },
+      { src: "/images/products/sose-ring-model.jpg", alt: "Sose Ring Model", type: "image" as const },
+      { src: "/images/products/sose-ring-model2.jpg", alt: "Sose Ring Model2", type: "image" as const },
     ],
   },
   {
@@ -2740,7 +2777,8 @@ export const products: Product[] = [
     gems: ["Amethyst", "Peridot"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Sosie collection" },
+      { src: "/images/products/side-finger-triangle-ring-peacock.jpg", alt: "Side Finger Triangle Ring Peacock", type: "image" as const },
+      { src: "/images/products/side-finger-triangle-ring-model.jpg", alt: "Side Finger Triangle Ring Model", type: "image" as const },
     ],
   },
   {
@@ -2820,7 +2858,7 @@ export const products: Product[] = [
     gems: ["White Diamonds"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Sosie collection" },
+      { src: "/images/products/twist-ring.jpg", alt: "Twist Ring", type: "image" as const },
     ],
   },
   {
@@ -2948,7 +2986,7 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Rubies", "Aquamarine", "Pink Sapphires"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Multi-wear piece from the Transformers collection" },
+      { src: "/images/products/falcon.jpg", alt: "Falcon", type: "image" as const },
     ],
   },
   {
@@ -2964,7 +3002,9 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Blue Sapphires"],
     metalColor: "White Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Multi-wear piece from the Transformers collection" },
+      { src: "/images/products/magnetic-transformer-12-piece-component-ringearring.jpg", alt: "Magnetic Transformer 12 Piece Component Ringearring", type: "image" as const },
+      { src: "/images/products/magnetic-transformer-12-piece-component-ringearring-2.jpg", alt: "Magnetic Transformer 12 Piece Component Ringearring 2", type: "image" as const },
+      { src: "/images/products/magnetic-transformer-12-piece-component-ringearring-3.jpg", alt: "Magnetic Transformer 12 Piece Component Ringearring 3", type: "image" as const },
     ],
   },
   {
@@ -3028,7 +3068,8 @@ export const products: Product[] = [
     gems: ["White Sapphires", "Rubies"],
     metalColor: "Rose Gold",
     images: [
-      { src: `${IMG_BASE}/rings.webp`, alt: "Ring from the Transformers collection" },
+      { src: "/images/products/pomegranate-ring.jpg", alt: "Pomegranate Ring", type: "image" as const },
+      { src: "/images/products/pomegranate-ring-open.jpg", alt: "Pomegranate Ring Open", type: "image" as const },
     ],
   },
   {
