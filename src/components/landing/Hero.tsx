@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 
 export function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-end overflow-hidden">
       {/* Background image or video — no motion wrapper to avoid hydration flash */}
       <div className="absolute inset-0 animate-[fadeIn_1s_ease-out]">
         {siteContent.images.heroVideo ? (
@@ -40,7 +40,7 @@ export function Hero() {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="relative z-10 text-center px-6 max-w-4xl"
+        className="relative z-10 text-right pr-12 md:pr-20 lg:pr-28 px-6 max-w-2xl"
       >
         <motion.p
           variants={fadeUp}
@@ -56,7 +56,7 @@ export function Hero() {
         </motion.h1>
         <motion.p
           variants={fadeUp}
-          className="mt-6 text-sm md:text-base tracking-wide text-foreground/60 max-w-xl mx-auto leading-relaxed"
+          className="mt-6 text-sm md:text-base tracking-wide text-foreground/60 max-w-xl ml-auto leading-relaxed"
         >
           {siteContent.brand.heroSubtitle}
         </motion.p>
