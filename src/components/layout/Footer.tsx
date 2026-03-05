@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/logo.png";
+import { imageSrc } from "@/lib/image";
 
 export function Footer() {
   return (
@@ -11,8 +11,10 @@ export function Footer() {
           <div>
             <Link href="/">
               <Image
-                src={logo}
+                src={imageSrc("/monogram.png")}
                 alt="Myriam Soseilos"
+                width={56}
+                height={56}
                 className="h-14 w-auto"
               />
             </Link>
