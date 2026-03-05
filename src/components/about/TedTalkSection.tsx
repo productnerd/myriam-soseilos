@@ -10,7 +10,7 @@ export function TedTalkSection() {
   if (!videoId) return null;
 
   return (
-    <section className="py-24 md:py-32 px-6">
+    <section className="py-24 md:py-32 px-6 md:px-10 lg:px-16">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection className="text-center mb-12">
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">

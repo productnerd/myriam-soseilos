@@ -18,7 +18,7 @@ const featured = products
 
 export function JewelleryShowcase() {
   return (
-    <section className="py-24 md:py-32 px-6">
+    <section className="py-24 md:py-32 px-6 md:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection className="text-center mb-16 md:mb-20">
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">

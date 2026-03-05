@@ -40,7 +40,7 @@ export function Hero() {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="relative z-10 text-right pr-12 md:pr-20 lg:pr-28 px-6 max-w-2xl"
+        className="relative z-10 text-right pr-12 md:pr-20 lg:pr-28 px-6 md:px-10 lg:px-16 max-w-2xl"
       >
         <motion.p
           variants={fadeUp}

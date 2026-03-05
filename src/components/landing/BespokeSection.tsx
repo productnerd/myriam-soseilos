@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 
 export function BespokeSection() {
   return (
-    <section className="py-24 md:py-32 px-6">
+    <section className="py-24 md:py-32 px-6 md:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/*
           3-column rectangle layout:

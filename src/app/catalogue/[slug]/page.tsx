@@ -31,22 +31,24 @@ export default function ProductPage({
   if (!product) notFound();
 
   return (
-    <section className="pt-28 pb-24 px-6 max-w-7xl mx-auto">
-      {/* Breadcrumb */}
-      <nav className="mb-10 flex items-center gap-2 text-xs text-muted">
-        <Link
-          href="/catalogue"
-          className="hover:text-foreground transition-colors duration-300"
-        >
-          Catalogue
-        </Link>
-        <span>/</span>
-        <span className="text-foreground/60">{product.name}</span>
-      </nav>
+    <section className="pt-28 pb-24 px-6 md:px-10 lg:px-16">
+      <div className="max-w-7xl mx-auto">
+        {/* Breadcrumb */}
+        <nav className="mb-10 flex items-center gap-2 text-xs text-muted">
+          <Link
+            href="/catalogue"
+            className="hover:text-foreground transition-colors duration-300"
+          >
+            Catalogue
+          </Link>
+          <span>/</span>
+          <span className="text-foreground/60">{product.name}</span>
+        </nav>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
-        <ProductGallery product={product} />
-        <ProductInfo product={product} />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
+          <ProductGallery product={product} />
+          <ProductInfo product={product} />
+        </div>
       </div>
     </section>
   );

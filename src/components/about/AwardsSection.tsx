@@ -10,7 +10,7 @@ export function AwardsSection() {
   const inView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section ref={ref} className="py-24 md:py-32 px-6">
+    <section ref={ref} className="py-24 md:py-32 px-6 md:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div

@@ -8,7 +8,7 @@ import { fadeUp, staggerContainer, fadeIn } from "@/lib/animations";
 
 export function StorySection() {
   return (
-    <section className="pt-44 pb-24 md:pb-32 px-6">
+    <section className="pt-44 pb-24 md:pb-32 px-6 md:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

@@ -34,7 +34,7 @@ export function PressSection() {
   }, [visible]);
 
   return (
-    <section ref={ref} className="py-24 md:py-32 px-6">
+    <section ref={ref} className="py-24 md:py-32 px-6 md:px-10 lg:px-16">
       <div className="max-w-5xl mx-auto">
         <div
           className="text-center mb-16"
