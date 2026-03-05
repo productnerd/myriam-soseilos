@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { staggerContainer, fadeUp } from "@/lib/animations";
 import { siteContent } from "@/data/siteContent";
+import { imageSrc } from "@/lib/image";
 import { Button } from "@/components/ui/Button";
 
 export function Hero() {
@@ -23,7 +24,7 @@ export function Hero() {
           </video>
         ) : (
           <Image
-            src={siteContent.images.hero}
+            src={imageSrc(siteContent.images.hero)}
             alt="Myriam Soseilos jewellery"
             fill
             className="object-cover rounded-none"
