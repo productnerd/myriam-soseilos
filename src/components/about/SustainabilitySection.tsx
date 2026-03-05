@@ -7,7 +7,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export function SustainabilitySection() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-10 lg:px-16">
+    <section className="py-24 md:py-32 px-6 md:px-20 lg:px-28">
       <div className="max-w-3xl mx-auto">
         <AnimatedSection className="mb-10">
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function BespokePage() {
   return (
-    <section className="pt-44 pb-24 px-6 md:px-10 lg:px-16">
+    <section className="pt-44 pb-24 px-6 md:px-20 lg:px-28">
       <div className="max-w-5xl mx-auto">
         <BespokeHeader />
 

@@ -4,7 +4,7 @@ import { imageSrc } from "@/lib/image";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border px-6 md:px-10 lg:px-16">
+    <footer className="border-t border-border px-6 md:px-20 lg:px-28">
       <div className="max-w-7xl mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}

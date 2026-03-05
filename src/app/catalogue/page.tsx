@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function CataloguePage() {
   return (
-    <section className="pt-44 pb-24 px-6 md:px-10 lg:px-16">
+    <section className="pt-44 pb-24 px-6 md:px-20 lg:px-28">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">

@@ -31,7 +31,7 @@ export default function ProductPage({
   if (!product) notFound();
 
   return (
-    <section className="pt-28 pb-24 px-6 md:px-10 lg:px-16">
+    <section className="pt-28 pb-24 px-6 md:px-20 lg:px-28">
       <div className="max-w-7xl mx-auto">
         {/* Breadcrumb */}
         <nav className="mb-10 flex items-center gap-2 text-xs text-muted">

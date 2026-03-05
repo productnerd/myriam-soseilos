@@ -46,7 +46,7 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-10 lg:px-16 transition-all duration-700 ${
+        className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-20 lg:px-28 transition-all duration-700 ${
           scrolled
             ? "backdrop-blur-md border-b border-border"
             : "bg-transparent"
