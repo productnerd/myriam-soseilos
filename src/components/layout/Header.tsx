@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/logo.png";
+import { imageSrc } from "@/lib/image";
 
 const leftLinks = [
   { href: "/catalogue", label: "Collection" },
@@ -68,8 +68,10 @@ export function Header() {
             className="absolute left-1/2 -translate-x-1/2 hover:opacity-60 transition-opacity duration-300 delay-75"
           >
             <Image
-              src={logo}
+              src={imageSrc("/monogram.png")}
               alt="Myriam Soseilos"
+              width={56}
+              height={56}
               className="h-14 w-auto"
               priority
             />

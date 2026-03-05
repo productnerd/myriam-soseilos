@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/Button";
 const FALLBACK_IMAGES = ["rings.webp", "earrings2.webp", "bracelets.webp", "necklaces.webp"];
 const featured = products
   .filter((p) => !FALLBACK_IMAGES.some((f) => p.images[0].src.includes(f)))
-  .slice(0, 5);
+  .slice(0, 6);
 
 export function JewelleryShowcase() {
   return (
@@ -46,9 +46,13 @@ export function JewelleryShowcase() {
             <ProductShowcaseCard product={featured[1]} aspectClass="aspect-[4/3] lg:aspect-auto lg:h-[420px]" />
           </motion.div>
 
-          {/* Three items in a row */}
-          {featured.slice(2).map((product) => (
-            <motion.div key={product.slug} variants={fadeUp} className="lg:col-span-4">
+          {/* Three items in a row (6th visible only on tablet for 3×2 grid) */}
+          {featured.slice(2).map((product, i) => (
+            <motion.div
+              key={product.slug}
+              variants={fadeUp}
+              className={`lg:col-span-4${i === 3 ? " hidden md:block lg:hidden" : ""}`}
+            >
               <ProductShowcaseCard product={product} aspectClass="aspect-square" />
             </motion.div>
           ))}
