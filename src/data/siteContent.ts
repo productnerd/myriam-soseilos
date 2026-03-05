@@ -53,7 +53,7 @@ export const siteContent = {
     hero: "/hero.jpg",
     heroVideo: undefined as string | undefined, // Set to a video URL to use video hero background
     bespoke: `${IMG_BASE}/bespoke-large.webp`,
-    aboutMyriam: `${IMG_BASE}/myriam.webp`,
+    aboutMyriam: "/profile.jpg",
     aboutJewellery: `${IMG_BASE}/Dreamingless-Power-Barcelet-and-Carmelita-Ring.webp`,
     categories: {
       necklaces: `${IMG_BASE}/necklaces.webp`,

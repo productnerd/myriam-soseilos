@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { siteContent } from "@/data/siteContent";
+import { imageSrc } from "@/lib/image";
 import { fadeUp, staggerContainer, fadeIn } from "@/lib/animations";
 
 export function StorySection() {
@@ -38,7 +39,7 @@ export function StorySection() {
             className="relative aspect-[3/4] overflow-hidden bg-surface rounded-lg"
           >
             <Image
-              src={siteContent.images.aboutMyriam}
+              src={imageSrc(siteContent.images.aboutMyriam)}
               alt="Myriam Soseilos"
               fill
               className="object-cover rounded-lg"
