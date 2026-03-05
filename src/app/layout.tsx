@@ -19,20 +19,37 @@ const montserrat = localFont({
   display: "swap",
 });
 
+const BASE_URL = "https://productnerd.github.io/myriam-soseilos";
+
 export const metadata: Metadata = {
   title: {
-    default: "Myriam Soseilos | Fine Jewellery",
+    default: "MS / audaciously different jewellery",
     template: "%s | Myriam Soseilos",
   },
   description:
     "Audaciously different fine jewellery. Bold, unconventional designs inspired by architecture, space and the wearer themselves.",
+  metadataBase: new URL(BASE_URL),
   openGraph: {
-    title: "Myriam Soseilos | Fine Jewellery",
+    title: "Myriam Soseilos | Audaciously Different Jewellery",
     description: "Audaciously different fine jewellery.",
-    url: "https://myriamsos.co.uk",
+    url: BASE_URL,
     siteName: "Myriam Soseilos",
     locale: "en_GB",
     type: "website",
+    images: [
+      {
+        url: `${BASE_URL}/hero.jpg`,
+        width: 2624,
+        height: 1824,
+        alt: "Myriam Soseilos jewellery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Myriam Soseilos | Audaciously Different Jewellery",
+    description: "Audaciously different fine jewellery.",
+    images: [`${BASE_URL}/hero.jpg`],
   },
 };
 
