@@ -36,7 +36,7 @@ export function ProductCard({ product }: Props) {
         <p className="text-sm text-muted">
           {product.price
             ? `From \u00A3${product.price.toLocaleString()}`
-            : "Price on request"}
+            : "Price upon request"}
         </p>
       </div>
     </Link>

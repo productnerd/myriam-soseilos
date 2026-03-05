@@ -19,7 +19,7 @@ export function BespokeSection() {
           │  Image   │  Image 2 │  Image 3  │
           └──────────┴──────────┴───────────┘
         */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Left column — tall image spanning full height */}
           <motion.div
             variants={fadeUp}
@@ -72,7 +72,7 @@ export function BespokeSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="lg:col-span-2 grid grid-cols-2 gap-4"
+            className="md:col-span-2 lg:col-span-2 grid grid-cols-2 gap-4"
           >
             <motion.div
               variants={fadeUp}

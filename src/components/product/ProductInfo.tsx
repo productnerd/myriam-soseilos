@@ -71,7 +71,7 @@ export function ProductInfo({ product }: Props) {
         </>
       ) : (
         <motion.p variants={fadeUp} className="mt-4 text-lg text-accent">
-          Price on request
+          Price upon request
         </motion.p>
       )}
 
