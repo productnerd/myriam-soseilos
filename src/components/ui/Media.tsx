@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { imageSrc } from "@/lib/image";
 
 export type MediaItem = {
   src: string;
@@ -32,7 +33,7 @@ export function Media({
         playsInline
         className={`object-cover w-full h-full rounded-lg ${className}`}
       >
-        <source src={item.src} />
+        <source src={imageSrc(item.src)} />
       </video>
     );
   }
@@ -41,7 +42,7 @@ export function Media({
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src={item.src}
+        src={imageSrc(item.src)}
         alt={item.alt}
         className={`object-cover w-full h-full rounded-lg ${className}`}
       />
@@ -50,7 +51,7 @@ export function Media({
 
   return (
     <Image
-      src={item.src}
+      src={imageSrc(item.src)}
       alt={item.alt}
       fill={fill}
       className={`object-cover rounded-lg ${className}`}

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/data/products";
+import { imageSrc } from "@/lib/image";
 import { getCollectionBySlug } from "@/data/collections";
 import { imageHoverZoom } from "@/lib/animations";
 
@@ -17,7 +18,7 @@ export function ProductCard({ product }: Props) {
       <div className="relative aspect-[3/4] overflow-hidden bg-surface rounded-lg">
         <motion.div whileHover={{ ...imageHoverZoom, transition: { delay: 0.07, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } }} className="h-full w-full">
           <Image
-            src={product.images[0].src}
+            src={imageSrc(product.images[0].src)}
             alt={product.images[0].alt}
             fill
             className="object-cover rounded-lg"
