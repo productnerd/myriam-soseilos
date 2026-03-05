@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Product } from "@/data/products";
@@ -11,6 +12,11 @@ type Props = { product: Product };
 
 export function ProductInfo({ product }: Props) {
   const collection = getCollectionBySlug(product.collection);
+  const [selectedVariant, setSelectedVariant] = useState(0);
+
+  const activePrice = product.variants
+    ? product.variants[selectedVariant].price
+    : product.price;
 
   return (
     <motion.div
@@ -35,10 +41,29 @@ export function ProductInfo({ product }: Props) {
         {product.name}
       </motion.h1>
 
-      {product.price ? (
+      {/* Variant selector */}
+      {product.variants && product.variants.length > 1 && (
+        <motion.div variants={fadeUp} className="mt-4 flex flex-wrap gap-2">
+          {product.variants.map((v, i) => (
+            <button
+              key={v.sku}
+              onClick={() => setSelectedVariant(i)}
+              className={`px-4 py-2 text-xs tracking-[0.15em] uppercase border rounded-full transition-colors duration-200 ${
+                i === selectedVariant
+                  ? "border-accent text-accent bg-accent/5"
+                  : "border-border text-muted hover:border-foreground/30 hover:text-foreground/60"
+              }`}
+            >
+              {v.label}
+            </button>
+          ))}
+        </motion.div>
+      )}
+
+      {activePrice ? (
         <>
           <motion.p variants={fadeUp} className="mt-4 text-2xl">
-            &pound;{product.price.toLocaleString()}
+            &pound;{activePrice.toLocaleString()}
           </motion.p>
           <motion.p variants={fadeUp} className="mt-2 text-xs text-muted">
             VAT included (UK/EU only)
