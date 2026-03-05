@@ -50,7 +50,7 @@ export const siteContent = {
     email: "info@myriamsos.co.uk",
   },
   images: {
-    hero: "/hero.png",
+    hero: "/hero.jpg",
     heroVideo: undefined as string | undefined, // Set to a video URL to use video hero background
     bespoke: `${IMG_BASE}/bespoke-large.webp`,
     aboutMyriam: `${IMG_BASE}/myriam.webp`,
