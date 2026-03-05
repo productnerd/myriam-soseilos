@@ -27,11 +27,11 @@ export const metadata: Metadata = {
     template: "%s | Myriam Soseilos",
   },
   description:
-    "Audaciously different fine jewellery. Bold, unconventional designs inspired by architecture, space and the wearer themselves.",
+    "Bespoke fine jewellery that carries a story. Bold, unconventional pieces inspired by architecture, space and the wearer themselves.",
   metadataBase: new URL(BASE_URL),
   openGraph: {
     title: "Myriam Soseilos | Audaciously Different Jewellery",
-    description: "Audaciously different fine jewellery.",
+    description: "Bespoke fine jewellery that carries a story.",
     url: BASE_URL,
     siteName: "Myriam Soseilos",
     locale: "en_GB",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Myriam Soseilos | Audaciously Different Jewellery",
-    description: "Audaciously different fine jewellery.",
+    description: "Bespoke fine jewellery that carries a story.",
     images: [`${BASE_URL}/hero.jpg`],
   },
 };
