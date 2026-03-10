@@ -1,0 +1,276 @@
+.pokemon-card {
+	--card-width: 350px;
+	--card-height: 488px;
+	--card-border-radius: 4.5%;
+	width: var(--card-width);
+	height: var(--card-height);
+	position: relative;
+	border-radius: var(--card-border-radius);
+	background: #f3d23b;
+	padding: 12px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-inner {
+	border-radius: calc(var(--card-border-radius) - 1%);
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+.card-inner::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(
+		115deg,
+		transparent 0%,
+		rgb(0, 231, 255) 30%,
+		rgb(255, 0, 231) 70%,
+		transparent 100%
+	);
+	background-position: 50% 50%;
+	background-size: 200% 200%;
+	opacity: 0;
+	transition: opacity 250ms;
+	pointer-events: none;
+}
+
+.pokemon-card:hover .card-inner::before {
+	opacity: 0.15;
+	animation: holo 3s linear infinite;
+}
+
+.card-inner.NORMAL {
+	background: linear-gradient(160deg, #7bb4e8 0%, #5a8dc4 100%);
+}
+
+.card-inner.HOLO {
+	background: linear-gradient(160deg, #ffd700 0%, #ffa500 100%);
+}
+
+.card-inner.HOLO_REVERSE {
+	background: linear-gradient(160deg, #c0c0c0 0%, #808080 100%);
+}
+
+.card-inner.HOLO_AMAZING {
+	background: linear-gradient(160deg, #ff1493 0%, #9400d3 100%);
+}
+
+.card-inner.HOLO_SECRET {
+	background: linear-gradient(160deg, #000 0%, #333 100%);
+	color: white;
+}
+
+.card-inner.HOLO_FULLART {
+	background: linear-gradient(160deg, #4caf50 0%, #2e7d32 100%);
+}
+
+.card-inner.HOLO_RAINBOW {
+	background: linear-gradient(
+		45deg,
+		#ff0000,
+		#ff7f00,
+		#ffff00,
+		#00ff00,
+		#0000ff,
+		#4b0082,
+		#8f00ff
+	);
+	background-size: 400% 400%;
+	animation: rainbow 5s ease infinite;
+}
+
+.card-inner.HOLO_SHINY {
+	background: linear-gradient(160deg, #00ffff 0%, #00bfff 100%);
+}
+
+@keyframes holo {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes rainbow {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+	color: #000;
+}
+
+.card-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.card-type {
+	font-size: 0.8em;
+	color: #666;
+	padding: 2px 6px;
+	background: #e0e0e0;
+	border-radius: 4px;
+}
+
+.card-hp {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.card-image-container {
+	background: linear-gradient(150deg, #87ceeb 0%, #4682b4 100%);
+	border-radius: 8px;
+	margin: 0 12px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card-image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.card-footer {
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+	right: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 4px;
+}
+
+.weakness,
+.resistance,
+.retreat {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 0.8em;
+	color: #666;
+}
+
+/* Card-specific animations and effects */
+.card-inner.HOLO::before,
+.card-inner.HOLO_REVERSE::before,
+.card-inner.HOLO_AMAZING::before,
+.card-inner.HOLO_SECRET::before,
+.card-inner.HOLO_FULLART::before,
+.card-inner.HOLO_SHINY::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	background-size: 300% 300%;
+}
+
+.card-inner.HOLO::before {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E"),
+		linear-gradient(
+			115deg,
+			transparent 20%,
+			rgba(255, 215, 0, 0.5) 40%,
+			rgba(255, 165, 0, 0.6) 60%,
+			transparent 80%
+		);
+}
+
+.card-inner.HOLO_REVERSE::before {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E"),
+		linear-gradient(
+			115deg,
+			transparent 20%,
+			rgba(192, 192, 192, 0.5) 40%,
+			rgba(128, 128, 128, 0.6) 60%,
+			transparent 80%
+		);
+}
+
+.card-inner.HOLO_AMAZING::before {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.1' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E"),
+		linear-gradient(
+			115deg,
+			transparent 20%,
+			rgba(255, 20, 147, 0.5) 40%,
+			rgba(148, 0, 211, 0.6) 60%,
+			transparent 80%
+		);
+}
+
+.card-inner.HOLO_SECRET::before {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.07' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E"),
+		linear-gradient(
+			115deg,
+			transparent 20%,
+			rgba(50, 50, 50, 0.5) 40%,
+			rgba(100, 100, 100, 0.6) 60%,
+			transparent 80%
+		);
+}
+
+.card-inner.HOLO_FULLART::before {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E"),
+		linear-gradient(
+			115deg,
+			transparent 20%,
+			rgba(76, 175, 80, 0.5) 40%,
+			rgba(46, 125, 50, 0.6) 60%,
+			transparent 80%
+		);
+}
+
+.pokemon-card:hover .card-inner.HOLO::before,
+.pokemon-card:hover .card-inner.HOLO_REVERSE::before,
+.pokemon-card:hover .card-inner.HOLO_AMAZING::before,
+.pokemon-card:hover .card-inner.HOLO_SECRET::before,
+.pokemon-card:hover .card-inner.HOLO_FULLART::before,
+.pokemon-card:hover .card-inner.HOLO_SHINY::before {
+	opacity: 1;
+	animation: holo 3s linear infinite;
+}
+
+/* Special rainbow effect */
+.pokemon-card:hover .card-inner.HOLO_RAINBOW {
+	animation: rainbow 5s ease infinite;
+}
+
+/* Special shiny effect */
+.card-inner.HOLO_SHINY::before {
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.06' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E"),
+		linear-gradient(
+			115deg,
+			transparent 20%,
+			rgba(0, 255, 255, 0.5) 40%,
+			rgba(0, 191, 255, 0.6) 60%,
+			transparent 80%
+		);
+}

@@ -1,0 +1,78 @@
+/* Hover effects */
+.card:hover {
+	transform: perspective(1000px) rotateX(var(--rotate-x, 0)) rotateY(var(--rotate-y, 0));
+	transition: transform 0.1s ease;
+}
+
+.card:hover .card__shine {
+	opacity: 1;
+}
+
+.card:hover .card__glare {
+	opacity: 0.8;
+}
+
+/* Card movement transition */
+.card {
+	transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__inner.HOLO::before,
+.card__inner.HOLO_REVERSE::before,
+.card__inner.HOLO_AMAZING::before,
+.card__inner.HOLO_SECRET::before,
+.card__inner.HOLO_SHINY::before {
+	animation: subtle-shift 3s ease-in-out infinite alternate;
+}
+
+@keyframes subtle-shift {
+	0% {
+		transform: translateX(-5px) translateY(-5px);
+	}
+	100% {
+		transform: translateX(5px) translateY(5px);
+	}
+}
+
+@keyframes rainbow {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.card__inner.HOLO_RAINBOW {
+	animation: rainbow 5s ease infinite;
+}
+
+/* Shine animation for holographic cards */
+@keyframes shine {
+	0% {
+		opacity: 0.5;
+		transform: translateY(-100%) translateX(-100%);
+	}
+	25% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0.5;
+		transform: translateY(100%) translateX(100%);
+	}
+}
+
+.card:hover .card__inner.HOLO .card__shine,
+.card:hover .card__inner.HOLO_AMAZING .card__shine,
+.card:hover .card__inner.HOLO_SHINY .card__shine {
+	animation: shine 3s ease-in-out infinite alternate;
+}

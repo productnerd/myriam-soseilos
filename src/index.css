@@ -1,0 +1,283 @@
+@font-face {
+	font-family: "Lazysoul";
+	src: url("@/assets/fonts/Lazysoul-Italic.otf") format("opentype");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Kingshare";
+	src: url("@/assets/fonts/Kingshare.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 30 20% 12%;
+		--foreground: 32 40% 98%;
+
+		--card: 28 15% 15%;
+		--card-foreground: 32 40% 98%;
+
+		--popover: 28 15% 15%;
+		--popover-foreground: 32 40% 98%;
+
+		--primary: 24 100% 45%;
+		--primary-foreground: 355.7 100% 97.3%;
+
+		--secondary: 28 15% 20%;
+		--secondary-foreground: 32 40% 98%;
+
+		--muted: 28 15% 20%;
+		--muted-foreground: 28 16.3% 70%;
+
+		--accent: 28 15% 20%;
+		--accent-foreground: 32 40% 98%;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 32 40% 98%;
+
+		--border: 30 5% 26%;
+		--input: 30 5% 26%;
+		--ring: 24 100% 45%;
+
+		--radius: 1rem;
+
+		--sidebar-background: 28 15% 15%;
+		--sidebar-foreground: 32 40% 98%;
+		--sidebar-primary: 24 100% 45%;
+		--sidebar-primary-foreground: 355.7 100% 97.3%;
+		--sidebar-accent: 28 15% 20%;
+		--sidebar-accent-foreground: 32 40% 98%;
+		--sidebar-border: 30 5% 26%;
+		--sidebar-ring: 24 100% 45%;
+	}
+
+	h1 {
+		font-family: "Lazysoul", sans-serif;
+		font-weight: normal;
+		font-style: italic;
+		text-align: left;
+		font-size: 1.5em; /* Increased by 50% from default */
+		line-height: 0.9; /* 90% line spacing */
+	}
+
+	/* Apply Outfit font to all text except h1 */
+	body,
+	p,
+	span,
+	div,
+	button,
+	a,
+	input,
+	textarea,
+	select,
+	label,
+	li,
+	td,
+	th {
+		font-family: "Outfit", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		text-align: left;
+	}
+
+	h2,
+	h5,
+	h6 {
+		font-family: "Outfit", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight: 600;
+		text-align: left;
+	}
+
+	h3 {
+		font-family: "Outfit", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight: 600;
+		text-align: left;
+		font-size: 1.35rem; /* Decreased by 20% from 1.6875rem */
+		margin-bottom: 0.5rem; /* Decreased from 1rem */
+	}
+
+	@media (min-width: 640px) {
+		h3 {
+			font-size: 1.5rem; /* Decreased by 20% from 1.875rem */
+		}
+	}
+
+	h4 {
+		font-family: "Outfit", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight: 600;
+		text-align: left;
+		font-size: 1.125rem; /* 18px */
+		margin-bottom: 0.75rem;
+	}
+
+	@media (min-width: 640px) {
+		h4 {
+			font-size: 1.25rem; /* 20px */
+		}
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+		font-feature-settings: "rlig" 1, "calt" 1;
+		text-align: left;
+	}
+}
+
+@layer components {
+	/* Glass morphism effect for cards */
+	.glass {
+		@apply bg-card/50 backdrop-blur-md border border-white/10 shadow-lg;
+	}
+
+	/* Toast glassmorphism styling */
+	.glassmorphic-toast .toast {
+		@apply bg-card/60 backdrop-blur-md border border-white/10 shadow-lg;
+	}
+
+	/* Smooth hover transitions for interactive elements */
+	.interactive {
+		@apply transition-all duration-300 ease-in-out;
+	}
+
+	/* Button hover animation */
+	.btn-hover {
+		@apply relative overflow-hidden transition-all duration-300 ease-in-out;
+	}
+
+	.btn-hover::after {
+		@apply content-[''] absolute inset-0 bg-white/10 scale-x-0 transition-transform duration-300 ease-in-out origin-left;
+	}
+
+	.btn-hover:hover::after {
+		@apply scale-x-100;
+	}
+
+	/* Tab bar styling */
+	.tab-bar {
+		@apply fixed bottom-0 left-0 right-0 bg-card/80 backdrop-blur-lg border-t border-border flex justify-around items-center h-16 px-0 md:px-4 z-50;
+	}
+
+	/* Tab item styling */
+	.tab-item {
+		@apply flex flex-col items-center justify-center space-y-1 w-full h-full py-2 transition-all duration-300;
+	}
+
+	/* Active tab styling */
+	.tab-item.active {
+		@apply text-primary;
+	}
+
+	/* Remove all hover effects from tab icons */
+
+	/* Page transition container */
+	.page-transition {
+		@apply min-h-[calc(100vh-4rem)] w-full overflow-hidden;
+	}
+
+	/* Neon glow effects */
+	.neon-glow {
+		@apply shadow-[0_0_8px_2px_hsl(var(--primary)/30)];
+	}
+
+	.neon-text {
+		@apply text-primary drop-shadow-[0_0_2px_hsl(var(--primary)/60)];
+	}
+
+	.perspective-1000 {
+		perspective: 1000px;
+	}
+
+	.transform-style-preserve-3d {
+		transform-style: preserve-3d;
+	}
+
+	.backface-hidden {
+		backface-visibility: hidden;
+	}
+
+	.rotate-y-180 {
+		transform: rotateY(180deg);
+	}
+
+	/* Handwritten text style - matches quest instructions formatting */
+	.handwritten-text {
+		@apply p-4 rounded-md bg-muted/30 border border-border/50 font-handwritten text-handwritten;
+	}
+
+	@keyframes spawn {
+		0% {
+			transform: translateY(100vh) scale(0);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0) scale(1);
+			opacity: 1;
+		}
+	}
+
+	.animate-spawn {
+		animation: spawn 0.3s ease-out forwards;
+	}
+
+	/* Life in Weeks - domino load animation */
+	@keyframes week-appear {
+		0% {
+			opacity: 0;
+			transform: scale(0);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	.week-box {
+		opacity: 0;
+		animation: week-appear 0.2s ease-out forwards;
+	}
+
+	/* Pulsing current week */
+	@keyframes pulse-week {
+		0%,
+		100% {
+			box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.9), 0 0 6px 3px rgba(230, 92, 0, 0.6);
+		}
+		50% {
+			box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1), 0 0 10px 5px rgba(230, 92, 0, 0.8);
+		}
+	}
+
+	.week-current {
+		opacity: 0;
+		animation:
+			week-appear 0.2s ease-out forwards,
+			pulse-week 1.2s ease-in-out infinite;
+		z-index: 1;
+		position: relative;
+	}
+
+	.week-current-legend {
+		animation: pulse-week 1.5s ease-in-out infinite;
+	}
+}

@@ -1,0 +1,192 @@
+import { Activity } from "../../types/activity";
+
+export const sampleActivities: Activity[] = [
+	{
+		id: "sample-multiple-choice-1",
+		main_text: "What is the capital of France?",
+		correct_answer: "Paris",
+		type: "multiple_choice",
+		options: ["London", "Paris", "Berlin", "Rome"],
+		explanation: {
+			Paris: "Correct! Paris is the capital of France.",
+			London: "Incorrect. London is the capital of the United Kingdom.",
+			Berlin: "Incorrect. Berlin is the capital of Germany.",
+			Rome: "Incorrect. Rome is the capital of Italy.",
+		},
+		order_number: 1,
+	},
+	{
+		id: "sample-multiple-choice-multi-1",
+		main_text: "Which of these are programming languages?",
+		correct_answer: "JavaScript,Python",
+		type: "multiple_choice",
+		options: ["JavaScript", "Python", "HTML", "CSS"],
+		explanation: {
+			JavaScript: "Correct! JavaScript is a programming language.",
+			Python: "Correct! Python is a programming language.",
+			HTML: "Incorrect. HTML is a markup language.",
+			CSS: "Incorrect. CSS is a styling language.",
+		},
+		order_number: 2,
+	},
+	{
+		id: "sample-true-false-1",
+		main_text: "The Earth is flat.",
+		correct_answer: "false",
+		type: "true_false",
+		explanation: {
+			true: "Incorrect. The Earth is not flat.",
+			false: "Correct! The Earth is an oblate spheroid.",
+		},
+		order_number: 3,
+	},
+	{
+		id: "sample-image-multiple-choice-1",
+		main_text: "Which of these is a cat?",
+		correct_answer:
+			"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
+		type: "image_multiple_choice",
+		options: [
+			"https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=400&h=300&fit=crop",
+		],
+		explanation: {
+			"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop":
+				"Correct! This is a cat.",
+			"https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop":
+				"Incorrect. This is a dog.",
+			"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop":
+				"Incorrect. This is a bird.",
+			"https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=400&h=300&fit=crop":
+				"Incorrect. This is a fish.",
+		},
+		order_number: 4,
+		image_urls: [
+			"https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=400&h=300&fit=crop",
+		],
+	},
+	{
+		id: "sample-text-input-1",
+		main_text: "What is the largest planet in our solar system?",
+		correct_answer: "Jupiter",
+		type: "text_input",
+		explanation:
+			"Jupiter is the largest planet in our solar system, with a mass greater than all other planets combined.",
+		order_number: 5,
+	},
+	{
+		id: "sample-sorting-1",
+		main_text: "Sort these planets by their distance from the Sun (closest to farthest):",
+		correct_answer: "Mercury,Venus,Earth",
+		type: "sorting",
+		options: ["Earth", "Venus", "Mercury"],
+		explanation: "The correct order is Mercury, Venus, then Earth.",
+		order_number: 6,
+	},
+	{
+		id: "sample-poll-1",
+		main_text: "What is your favorite color?",
+		correct_answer: null,
+		type: "poll",
+		options: ["Red", "Blue", "Green", "Yellow"],
+		explanation: "This is a poll, so there is no correct answer.",
+		order_number: 7,
+		statistics: {
+			Red: 142,
+			Blue: 238,
+			Green: 186,
+			Yellow: 94,
+		},
+	},
+	{
+		id: "sample-image-poll-1",
+		main_text: "Which of these animals do you like the most?",
+		correct_answer: null,
+		type: "image_poll",
+		options: [
+			"https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop",
+		],
+		explanation: "This is an image poll, so there is no correct answer.",
+		order_number: 8,
+		image_urls: [
+			"https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
+			"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop",
+		],
+		statistics: {
+			"https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop": 156,
+			"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop": 203,
+			"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop": 127,
+		},
+	},
+	{
+		id: "sample-text-poll-1",
+		main_text: "What is your favorite programming language?",
+		correct_answer: null,
+		type: "text_poll",
+		options: ["JavaScript", "Python", "Java", "C++"],
+		explanation: "This is a text poll, so there is no correct answer.",
+		order_number: 9,
+		statistics: {
+			JavaScript: 342,
+			Python: 298,
+			Java: 167,
+			"C++": 113,
+		},
+	},
+	{
+		id: "sample-myth-or-reality-1",
+		main_text: "Lightning never strikes the same place twice.",
+		correct_answer: "myth",
+		type: "myth_or_reality",
+		explanation: {
+			myth: "Correct! Lightning can strike the same place multiple times.",
+			reality: "Incorrect. Lightning can strike the same place multiple times.",
+		},
+		order_number: 10,
+	},
+	{
+		id: "sample-eduntainment-youtube-1",
+		main_text: "Watch this educational video about space exploration",
+		correct_answer: null,
+		type: "eduntainment",
+		explanation:
+			"Space exploration has led to countless technological advances that benefit life on Earth.",
+		order_number: 11,
+		embed_url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+	},
+	{
+		id: "sample-eduntainment-twitter-1",
+		main_text: "Check out this interesting tweet about product development",
+		correct_answer: null,
+		type: "eduntainment",
+		explanation: "Social media can be a great source for quick insights and industry updates.",
+		order_number: 12,
+		embed_url: "https://x.com/productnerd/status/1924289508893511935",
+	},
+	{
+		id: "sample-eduntainment-instagram-1",
+		main_text: "View this educational Instagram reel",
+		correct_answer: null,
+		type: "eduntainment",
+		explanation: "Visual learning through social media platforms can enhance understanding.",
+		order_number: 13,
+		embed_url: "https://www.instagram.com/reel/DKH6B4coJq1/?utm_source=ig_web_copy_link",
+	},
+	{
+		id: "sample-pair-matching-1",
+		main_text: "Match the country with its capital:",
+		correct_answer: "France-Paris,Germany-Berlin,Italy-Rome",
+		type: "pair_matching",
+		options: ["France", "Germany", "Italy", "Paris", "Berlin", "Rome"],
+		explanation: "Match the country with its capital.",
+		order_number: 14,
+	},
+];
