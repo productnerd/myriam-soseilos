@@ -44,12 +44,19 @@ export const awards: Award[] = [
 ];
 
 export const pressFeatures: PressFeature[] = [
-  { name: "Vogue UK", type: "publication" },
+  // Publications first
   { name: "Marie Claire", type: "publication" },
   { name: "Madame Figaro", type: "publication" },
-  { name: "Selfridges", type: "retail" },
-  { name: "TEDx", type: "talk" },
+  { name: "Vogue Italia", type: "publication" },
+  { name: "Vogue India", type: "publication" },
+  { name: "Country & Town House", type: "publication" },
+  { name: "Retail Jeweller", type: "publication" },
+  { name: "You & Your Wedding", type: "publication" },
+  // Fashion weeks
   { name: "London Fashion Week", type: "event" },
   { name: "Paris Fashion Week", type: "event" },
   { name: "Shanghai Fashion Week", type: "event" },
+  // Other
+  { name: "Selfridges", type: "retail" },
+  { name: "TEDx", type: "talk" },
 ];
