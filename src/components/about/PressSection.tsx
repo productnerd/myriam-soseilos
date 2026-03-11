@@ -60,7 +60,7 @@ export function PressSection() {
             return (
               <div
                 key={i}
-                className="flex flex-col items-center justify-center text-center p-8 bg-surface border border-border rounded-lg min-h-[120px] transition-all duration-300 hover:border-foreground/20 hover:bg-foreground/[0.05] hover:-translate-y-1"
+                className="flex items-center justify-center p-8 bg-surface border border-border rounded-lg min-h-[120px] transition-all duration-300 hover:border-foreground/20 hover:bg-foreground/[0.05] hover:-translate-y-1"
                 style={
                   done
                     ? undefined
@@ -82,15 +82,6 @@ export function PressSection() {
                     {feature.name}
                   </span>
                 )}
-                <span className="mt-3 text-[10px] tracking-[0.2em] uppercase text-muted">
-                  {feature.type === "publication"
-                    ? "Publication"
-                    : feature.type === "retail"
-                    ? "Retail Partner"
-                    : feature.type === "event"
-                    ? "Fashion Week"
-                    : "Speaker"}
-                </span>
               </div>
             );
           })}
