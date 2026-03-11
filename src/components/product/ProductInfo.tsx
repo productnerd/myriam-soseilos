@@ -60,6 +60,7 @@ export function ProductInfo({ product }: Props) {
         </motion.div>
       )}
 
+      {/* Prices hidden for now — uncomment to restore
       {activePrice ? (
         <>
           <motion.p variants={fadeUp} className="mt-4 text-2xl">
@@ -74,6 +75,7 @@ export function ProductInfo({ product }: Props) {
           Price upon request
         </motion.p>
       )}
+      */}
 
       <motion.div
         variants={fadeUp}

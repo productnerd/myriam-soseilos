@@ -98,11 +98,13 @@ function ProductShowcaseCard({
           <h3 className="text-lg text-foreground mt-1">
             {product.name}
           </h3>
+          {/* Prices hidden for now — uncomment to restore
           <p className="text-sm text-foreground/60 mt-1">
             {product.price
               ? `From \u00A3${product.price.toLocaleString()}`
               : "Price upon request"}
           </p>
+          */}
         </div>
       </div>
     </Link>

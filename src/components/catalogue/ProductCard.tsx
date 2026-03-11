@@ -33,11 +33,13 @@ export function ProductCard({ product }: Props) {
         <h3 className="text-lg text-foreground group-hover:text-accent transition-colors duration-300">
           {product.name}
         </h3>
+        {/* Prices hidden for now — uncomment to restore
         <p className="text-sm text-muted">
           {product.price
             ? `From \u00A3${product.price.toLocaleString()}`
             : "Price upon request"}
         </p>
+        */}
       </div>
     </Link>
   );
