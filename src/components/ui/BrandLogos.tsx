@@ -54,19 +54,19 @@ export function TedxLogo({ className = "" }: LogoProps) {
 
 export function LondonFashionWeekLogo({ className = "" }: LogoProps) {
   return (
-    <img src={imageSrc("/logos/london-fashion-week.png")} alt="London Fashion Week" className={className} />
+    <img src={imageSrc("/logos/london-fashion-week.png")} alt="London Fashion Week" className={`${className} object-contain`} />
   );
 }
 
 export function ParisFashionWeekLogo({ className = "" }: LogoProps) {
   return (
-    <img src={imageSrc("/logos/paris-fashion-week.png")} alt="Paris Fashion Week" className={`${className} invert`} />
+    <img src={imageSrc("/logos/paris-fashion-week.png")} alt="Paris Fashion Week" className={`${className} object-contain invert`} />
   );
 }
 
 export function MilanoFashionWeekLogo({ className = "" }: LogoProps) {
   return (
-    <img src={imageSrc("/logos/milano-fashion-week.png")} alt="Milano Fashion Week" className={className} />
+    <img src={imageSrc("/logos/milano-fashion-week.png")} alt="Milano Fashion Week" className={`${className} object-contain`} />
   );
 }
 
