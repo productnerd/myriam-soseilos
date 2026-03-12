@@ -55,7 +55,7 @@ export const pressFeatures: PressFeature[] = [
   // Fashion weeks
   { name: "London Fashion Week", type: "event" },
   { name: "Paris Fashion Week", type: "event" },
-  { name: "Shanghai Fashion Week", type: "event" },
+  { name: "Milano Fashion Week", type: "event" },
   // Other
   { name: "Selfridges", type: "retail" },
   { name: "TEDx", type: "talk" },

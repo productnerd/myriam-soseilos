@@ -4,6 +4,8 @@
  * Styled to be recognizable representations of each brand's typography.
  */
 
+import { imageSrc } from "@/lib/image";
+
 type LogoProps = {
   className?: string;
 };
@@ -52,28 +54,19 @@ export function TedxLogo({ className = "" }: LogoProps) {
 
 export function LondonFashionWeekLogo({ className = "" }: LogoProps) {
   return (
-    <svg viewBox="0 0 200 44" className={className} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <text x="100" y="18" textAnchor="middle" fontFamily="Helvetica, Arial, sans-serif" fontSize="12" fontWeight="300" letterSpacing="4">LONDON</text>
-      <text x="100" y="38" textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize="16" fontWeight="400" letterSpacing="2">Fashion Week</text>
-    </svg>
+    <img src={imageSrc("/logos/london-fashion-week.png")} alt="London Fashion Week" className={className} />
   );
 }
 
 export function ParisFashionWeekLogo({ className = "" }: LogoProps) {
   return (
-    <svg viewBox="0 0 200 44" className={className} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <text x="100" y="18" textAnchor="middle" fontFamily="Helvetica, Arial, sans-serif" fontSize="12" fontWeight="300" letterSpacing="4">PARIS</text>
-      <text x="100" y="38" textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize="16" fontWeight="400" letterSpacing="2">Fashion Week</text>
-    </svg>
+    <img src={imageSrc("/logos/paris-fashion-week.png")} alt="Paris Fashion Week" className={`${className} invert`} />
   );
 }
 
-export function ShanghaiFashionWeekLogo({ className = "" }: LogoProps) {
+export function MilanoFashionWeekLogo({ className = "" }: LogoProps) {
   return (
-    <svg viewBox="0 0 200 44" className={className} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <text x="100" y="18" textAnchor="middle" fontFamily="Helvetica, Arial, sans-serif" fontSize="12" fontWeight="300" letterSpacing="4">SHANGHAI</text>
-      <text x="100" y="38" textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize="16" fontWeight="400" letterSpacing="2">Fashion Week</text>
-    </svg>
+    <img src={imageSrc("/logos/milano-fashion-week.png")} alt="Milano Fashion Week" className={className} />
   );
 }
 
@@ -208,7 +201,7 @@ export const pressLogoMap: Record<string, React.FC<LogoProps>> = {
   "TEDx": TedxLogo,
   "London Fashion Week": LondonFashionWeekLogo,
   "Paris Fashion Week": ParisFashionWeekLogo,
-  "Shanghai Fashion Week": ShanghaiFashionWeekLogo,
+  "Milano Fashion Week": MilanoFashionWeekLogo,
 };
 
 // Map award organization names to logo components
