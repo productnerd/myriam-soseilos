@@ -84,14 +84,11 @@ export function SustainabilitySection() {
       <div className="max-w-5xl mx-auto">
         <AnimatedSection className="mb-14 text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
-            Our Commitment
+            Our Philosophy
           </p>
           <h2 className="text-display-lg">
-            Ethical &amp; Sustainable
+            Φιλοσοφία
           </h2>
-          <p className="mt-6 text-foreground/50 leading-relaxed max-w-2xl mx-auto">
-            {siteContent.about.sustainability.intro}
-          </p>
         </AnimatedSection>
 
         <motion.div

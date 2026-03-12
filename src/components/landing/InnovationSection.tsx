@@ -37,108 +37,53 @@ export function InnovationSection() {
           </motion.h2>
         </motion.div>
 
-        {/* Three-column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14 items-start">
-          {/* Column 1: Image + Text + Image */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.div
-              variants={fadeIn}
-              className="relative aspect-[4/3] overflow-hidden bg-surface rounded-lg mb-6"
-            >
-              <Image
-                src={imageSrc(getImage("transformers", 0))}
-                alt="Transformer jewellery"
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
-            <motion.p
-              variants={fadeUp}
-              className="text-foreground/60 leading-relaxed"
-            >
-              Every piece starts with a question: what else could it do? Magnets
-              embedded in precious metal let a single ring become ten different
-              configurations. A necklace transforms into a bracelet. An earring
-              reverses to reveal a hidden face.
-            </motion.p>
+        {/* Images row */}
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14 mb-10 lg:mb-14"
+        >
+          <motion.div variants={fadeIn} className="relative aspect-[4/3] overflow-hidden bg-surface rounded-lg">
+            <Image src={imageSrc(getImage("transformers", 0))} alt="Transformer jewellery" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
           </motion.div>
+          <motion.div variants={fadeIn} className="relative aspect-[4/5] overflow-hidden bg-surface rounded-lg">
+            <Image src={imageSrc(getImage("otherworldly", 1))} alt="Otherworldly collection" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
+          </motion.div>
+          <motion.div variants={fadeIn} className="relative aspect-[3/4] overflow-hidden bg-surface rounded-lg">
+            <Image src={imageSrc(getImage("jagged", 0))} alt="Jagged collection" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
+          </motion.div>
+        </motion.div>
 
-          {/* Column 2: Text + Image + Text */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.p
-              variants={fadeUp}
-              className="text-foreground/60 leading-relaxed mb-6"
-            >
-              Myriam was one of the first jewellery designers in the world to
-              work with osmium — the densest naturally occurring element on
-              Earth. She created a ring that shifts colour with body temperature.
-              These aren&apos;t gimmicks; they&apos;re complications, the
-              mechanical challenges that drive every collection.
-            </motion.p>
-            <motion.div
-              variants={fadeIn}
-              className="relative aspect-[4/5] overflow-hidden bg-surface rounded-lg mb-6"
-            >
-              <Image
-                src={imageSrc(getImage("otherworldly", 1))}
-                alt="Otherworldly collection"
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
-            <motion.p
-              variants={fadeUp}
-              className="text-foreground/60 leading-relaxed"
-            >
-              Each piece is precision-modelled in 3D before casting at a
-              specialist atelier, then hand-finished with obsessive attention to
-              detail. The result is jewellery that surprises — mechanically,
-              materially, and emotionally.
-            </motion.p>
-          </motion.div>
-
-          {/* Column 3: Image + Text + Image */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.div
-              variants={fadeIn}
-              className="relative aspect-[3/4] overflow-hidden bg-surface rounded-lg mb-6"
-            >
-              <Image
-                src={imageSrc(getImage("jagged", 0))}
-                alt="Jagged collection"
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
-            <motion.p
-              variants={fadeUp}
-              className="text-foreground/60 leading-relaxed"
-            >
-              Inspired by architecture, space and the wearer themselves — nothing
-              is conventional and nothing is quite like it on the market.
-              Incomparable designs from a fiercely creative mind that asks
-              &ldquo;what if?&rdquo; before every project.
-            </motion.p>
-          </motion.div>
-        </div>
+        {/* Text row */}
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14"
+        >
+          <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
+            Every piece starts with a question: what else could it do? Magnets
+            embedded in precious metal let a single ring become ten different
+            configurations. A necklace transforms into a bracelet. An earring
+            reverses to reveal a hidden face.
+          </motion.p>
+          <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
+            Myriam was one of the first jewellery designers in the world to
+            work with osmium — the densest naturally occurring element on
+            Earth. She created a ring that shifts colour with body temperature.
+            These aren&apos;t gimmicks; they&apos;re complications, the
+            mechanical challenges that drive every collection.
+          </motion.p>
+          <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
+            Inspired by architecture, space and the wearer themselves — nothing
+            is conventional and nothing is quite like it on the market.
+            Incomparable designs from a fiercely creative mind that asks
+            &ldquo;what if?&rdquo; before every project.
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   );
