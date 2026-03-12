@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { products, Category } from "@/data/products";
 import { CollectionSlug, collections } from "@/data/collections";
@@ -24,9 +25,17 @@ const pillClass = (active: boolean) =>
   }`;
 
 export function ProductGrid() {
+  const searchParams = useSearchParams();
   const [collection, setCollection] = useState<CollectionSlug | "all">("all");
   const [category, setCategory] = useState<Category | "all">("all");
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    const param = searchParams.get("collection");
+    if (param && collections.some((c) => c.slug === param)) {
+      setCollection(param as CollectionSlug);
+    }
+  }, [searchParams]);
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();

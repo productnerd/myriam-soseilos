@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
 import { ProductGrid } from "@/components/catalogue/ProductGrid";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -23,7 +24,9 @@ export default function CataloguePage() {
             enquire, contact Myriam directly.
           </p>
         </AnimatedSection>
-        <ProductGrid />
+        <Suspense>
+          <ProductGrid />
+        </Suspense>
       </div>
     </section>
   );
