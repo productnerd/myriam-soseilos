@@ -16,22 +16,25 @@ export function CollectionTicker() {
     .map((c) => ({ ...c, image: getCollectionImage(c.slug) }))
     .filter((c) => c.image);
 
-  const doubled = [...items, ...items];
+  // Repeat enough to guarantee no gap (4× covers even very wide screens)
+  const repeated = [...items, ...items, ...items, ...items];
 
   return (
     <section className="py-16 md:py-24 overflow-hidden">
-      {/* Edge fade via CSS mask */}
+      {/* Fixed edge-fade wrapper — mask stays at viewport edges */}
       <div
-        className="flex animate-scroll-left"
         style={{
-          animationDuration: "40s",
           maskImage:
             "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
           WebkitMaskImage:
             "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
         }}
       >
-        {doubled.map((collection, i) => (
+        <div
+          className="flex animate-scroll-left"
+          style={{ animationDuration: "60s" }}
+        >
+        {repeated.map((collection, i) => (
           <Link
             key={`${collection.slug}-${i}`}
             href={`/catalogue?collection=${collection.slug}`}
@@ -72,6 +75,7 @@ export function CollectionTicker() {
             </div>
           </Link>
         ))}
+        </div>
       </div>
     </section>
   );
