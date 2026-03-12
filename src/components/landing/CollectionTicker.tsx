@@ -32,7 +32,7 @@ export function CollectionTicker() {
       >
         <div
           className="flex animate-scroll-left"
-          style={{ animationDuration: "60s" }}
+          style={{ animationDuration: "35s" }}
         >
         {repeated.map((collection, i) => (
           <Link
