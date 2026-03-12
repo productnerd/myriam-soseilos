@@ -7,7 +7,7 @@ import Image from "next/image";
 import { imageSrc } from "@/lib/image";
 
 const leftLinks = [
-  { href: "/catalogue", label: "Collection" },
+  { href: "/catalogue", label: "Pieces" },
   { href: "/bespoke", label: "Bespoke" },
 ];
 

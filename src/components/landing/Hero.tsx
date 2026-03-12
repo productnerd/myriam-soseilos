@@ -40,19 +40,19 @@ export function Hero() {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="relative z-10 text-right pr-12 md:pr-20 lg:pr-28 px-6 md:px-20 lg:px-28 max-w-2xl"
+        className="relative z-10 w-full text-right pr-12 md:pr-20 lg:pr-28 pl-6 md:pl-20 lg:pl-28"
       >
         <motion.p
           variants={fadeUp}
           className="text-xs tracking-[0.35em] uppercase text-accent mb-6"
         >
-          Audaciously Different
+          Myriam Soseilos Fine Jewellery
         </motion.p>
         <motion.h1
           variants={fadeUp}
           className="text-display-xl text-foreground"
         >
-          Myriam Soseilos
+          Audaciously Different
         </motion.h1>
         <motion.p
           variants={fadeUp}
@@ -61,7 +61,7 @@ export function Hero() {
           {siteContent.brand.heroSubtitle}
         </motion.p>
         <motion.div variants={fadeUp} className="mt-10">
-          <Button href="/catalogue">Explore Collection</Button>
+          <Button href="/catalogue">Explore Pieces</Button>
         </motion.div>
       </motion.div>
 

@@ -60,25 +60,13 @@ export function InnovationSection() {
             </motion.div>
             <motion.p
               variants={fadeUp}
-              className="text-foreground/60 leading-relaxed mb-5"
+              className="text-foreground/60 leading-relaxed"
             >
               Every piece starts with a question: what else could it do? Magnets
               embedded in precious metal let a single ring become ten different
               configurations. A necklace transforms into a bracelet. An earring
               reverses to reveal a hidden face.
             </motion.p>
-            <motion.div
-              variants={fadeIn}
-              className="relative aspect-[3/4] overflow-hidden bg-surface rounded-lg"
-            >
-              <Image
-                src={imageSrc(getImage("cosmic-dust", 2))}
-                alt="Cosmic Dust collection"
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
           </motion.div>
 
           {/* Column 2: Text + Image + Text */}
@@ -142,25 +130,13 @@ export function InnovationSection() {
             </motion.div>
             <motion.p
               variants={fadeUp}
-              className="text-foreground/60 leading-relaxed mb-6"
+              className="text-foreground/60 leading-relaxed"
             >
               Inspired by architecture, space and the wearer themselves — nothing
               is conventional and nothing is quite like it on the market.
               Incomparable designs from a fiercely creative mind that asks
               &ldquo;what if?&rdquo; before every project.
             </motion.p>
-            <motion.div
-              variants={fadeIn}
-              className="relative aspect-[4/3] overflow-hidden bg-surface rounded-lg"
-            >
-              <Image
-                src={imageSrc(getImage("skyline", 0))}
-                alt="Skyline collection"
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
           </motion.div>
         </div>
       </div>

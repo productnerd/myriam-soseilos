@@ -5,8 +5,8 @@ import { imageSrc } from "@/lib/image";
 export function Footer() {
   return (
     <footer className="border-t border-border px-6 md:px-20 lg:px-28">
-      <div className="max-w-7xl mx-auto py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto py-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
             <Link href="/">
@@ -37,7 +37,7 @@ export function Footer() {
                 href="/catalogue"
                 className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-300"
               >
-                Collection
+                Pieces
               </Link>
               <Link
                 href="/about"
@@ -86,7 +86,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-8 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted">
             &copy; {new Date().getFullYear()} Myriam Soseilos. All rights
             reserved.

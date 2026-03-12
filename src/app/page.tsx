@@ -11,8 +11,8 @@ export default function HomePage() {
     <>
       <Hero />
       <FeaturedInCarousel />
-      <CollectionTicker />
       <JewelleryShowcase />
+      <CollectionTicker />
       <AwardsCarousel />
       <BespokeSection />
       <InnovationSection />
