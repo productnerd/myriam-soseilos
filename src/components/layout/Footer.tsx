@@ -13,12 +13,12 @@ export function Footer() {
               <Image
                 src={imageSrc("/monogram.png")}
                 alt="Myriam Soseilos"
-                width={56}
-                height={56}
-                className="h-14 w-auto"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
               />
             </Link>
-            <p className="mt-4 text-sm text-muted leading-relaxed">
+            <p className="mt-3 text-[11px] text-muted leading-relaxed">
               Audaciously different fine jewellery.
               <br />
               Inspired by architecture, space

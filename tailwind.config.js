@@ -23,7 +23,7 @@ module.exports = {
       },
       fontSize: {
         "display-xl": [
-          "clamp(3rem, 8vw, 7rem)",
+          "clamp(2.5rem, 6vw, 5rem)",
           { lineHeight: "1.05", letterSpacing: "-0.02em" },
         ],
         "display-lg": [

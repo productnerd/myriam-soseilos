@@ -40,14 +40,14 @@ export function CollectionTicker() {
             href={`/catalogue?collection=${collection.slug}`}
             className="flex-shrink-0 px-3"
           >
-            <div className="relative w-52 md:w-64 aspect-[3/4] rounded-2xl overflow-hidden group">
+            <div className="relative w-[312px] md:w-96 aspect-[9/16] rounded-2xl overflow-hidden group">
               {/* Background image */}
               <Image
                 src={imageSrc(collection.image!)}
                 alt={collection.name}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 208px, 256px"
+                sizes="(max-width: 768px) 312px, 384px"
               />
 
               {/* Darken overlay */}
