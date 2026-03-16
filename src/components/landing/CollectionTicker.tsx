@@ -13,7 +13,7 @@ function getCollectionImage(slug: string): string | null {
 
 export function CollectionTicker() {
   const items = collections
-    .map((c) => ({ ...c, image: getCollectionImage(c.slug) }))
+    .map((c) => ({ ...c, image: c.coverImage || getCollectionImage(c.slug) }))
     .filter((c) => c.image);
 
   // Repeat enough to guarantee no gap (4× covers even very wide screens)
