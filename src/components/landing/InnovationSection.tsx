@@ -37,53 +37,66 @@ export function InnovationSection() {
           </motion.h2>
         </motion.div>
 
-        {/* Images row */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14 mb-10 lg:mb-14"
-        >
-          <motion.div variants={fadeIn} className="relative aspect-[4/3] overflow-hidden bg-surface rounded-lg">
-            <Image src={imageSrc(getImage("transformers", 0))} alt="Transformer jewellery" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
+        {/* Three-column interleaved layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14 items-start">
+          {/* Column 1: Image + text */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.div variants={fadeIn} className="relative aspect-[4/3] overflow-hidden bg-surface rounded-lg mb-6">
+              <Image src={imageSrc("/innovation1.jpeg")} alt="Innovation in jewellery" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
+            </motion.div>
+            <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
+              Every piece starts with a question: what if it did something?
+              <span className="font-medium text-foreground/80">Magnets embedded in precious metal</span> let
+              a single ring become ten different configurations. A necklace
+              transforms into a bracelet, and an earring reverses to reveal a
+              hidden face.
+            </motion.p>
           </motion.div>
-          <motion.div variants={fadeIn} className="relative aspect-[4/5] overflow-hidden bg-surface rounded-lg">
-            <Image src={imageSrc(getImage("otherworldly", 1))} alt="Otherworldly collection" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
-          </motion.div>
-          <motion.div variants={fadeIn} className="relative aspect-[3/4] overflow-hidden bg-surface rounded-lg">
-            <Image src={imageSrc(getImage("jagged", 0))} alt="Jagged collection" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
-          </motion.div>
-        </motion.div>
 
-        {/* Text row */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14"
-        >
-          <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
-            Every piece starts with a question: what if it did something?
-            Magnets embedded in precious metal let a single ring become ten
-            different configurations. A necklace transforms into a bracelet,
-            and an earring reverses to reveal a hidden face.
-          </motion.p>
-          <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
-            Myriam was one of the first jewellery designers in the world to
-            work with osmium, the densest naturally occurring element on
-            Earth. She also created a ring that shifts colour with body
-            temperature. These aren&apos;t gimmicks, they&apos;re the
-            mechanical challenges that drive every collection.
-          </motion.p>
-          <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
-            Jewellery shouldn&apos;t just exist to decorate. It should exist
-            to declare something. Inspired by architecture, space and the
-            wearer themselves, nothing here is conventional and nothing is
-            quite like it anywhere else.
-          </motion.p>
-        </motion.div>
+          {/* Column 2: Image + text on mobile, text + image on desktop */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="flex flex-col"
+          >
+            <motion.div variants={fadeIn} className="relative aspect-[4/5] overflow-hidden bg-surface rounded-lg mb-6 lg:order-2">
+              <Image src={imageSrc("/innovation2.jpeg")} alt="Osmium jewellery" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
+            </motion.div>
+            <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed mb-6 lg:mb-6 lg:order-1">
+              Myriam was <span className="font-medium text-foreground/80">one of the first jewellery
+              designers in the world to work with osmium</span>, the densest
+              naturally occurring element on Earth. She also created a{" "}
+              <span className="font-medium text-foreground/80">ring that shifts colour with body
+              temperature</span>. These aren&apos;t gimmicks, they&apos;re the
+              mechanical challenges that drive every collection.
+            </motion.p>
+          </motion.div>
+
+          {/* Column 3: Image + text */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <motion.div variants={fadeIn} className="relative aspect-[3/4] overflow-hidden bg-surface rounded-lg mb-6">
+              <Image src={imageSrc("/innovation4.jpg")} alt="Architectural jewellery" fill className="object-cover rounded-lg" sizes="(max-width: 768px) 100vw, 33vw" />
+            </motion.div>
+            <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
+              Jewellery shouldn&apos;t just exist to decorate. It should exist
+              to declare something. Inspired by architecture, space and the
+              wearer themselves, nothing here is conventional and nothing is
+              quite like it anywhere else.
+            </motion.p>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

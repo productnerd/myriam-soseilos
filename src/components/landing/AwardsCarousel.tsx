@@ -7,7 +7,7 @@ export function AwardsCarousel() {
 
   return (
     <section className="py-10 border-y border-border overflow-hidden">
-      <div className="flex animate-scroll-left">
+      <div className="flex animate-scroll-right">
         {doubled.map((award, i) => (
           <div
             key={i}

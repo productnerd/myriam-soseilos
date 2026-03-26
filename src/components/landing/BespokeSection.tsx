@@ -38,7 +38,7 @@ export function BespokeSection() {
           </motion.div>
 
           {/* Right two columns — text on top */}
-          <div className="lg:col-span-2 flex flex-col justify-center px-2 lg:px-8 py-4">
+          <div className="lg:col-span-2 flex flex-col justify-center py-4">
             <AnimatedSection>
               <p className="text-xs tracking-[0.3em] uppercase text-muted mb-4">
                 Made for You
@@ -49,12 +49,18 @@ export function BespokeSection() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <p className="mt-6 text-foreground/60 leading-relaxed">
-                {siteContent.bespoke.description}
+                We build from who you are. Not a version of you, not an idea of
+                you, but <span className="font-medium text-foreground/80">you</span>. We
+                start with memory, the kind that shapes you, and create{" "}
+                <span className="font-medium text-foreground/80">pieces that don&apos;t stay
+                still</span>. They evolve as you add, remove and transform them.
+                A gem isn&apos;t just a stone, it marks something: a beginning,
+                an ending, a change.
               </p>
               <p className="mt-4 text-foreground/60 leading-relaxed">
-                Every commission starts with a conversation and becomes a deeply
-                personal collaboration. No templates, no compromises — your
-                story, your way.
+                Every commission starts with a conversation and becomes a{" "}
+                <span className="font-medium text-foreground/80">deeply personal
+                collaboration</span>. No templates, no compromises.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.4}>
