@@ -5,7 +5,7 @@ export const siteContent = {
     name: "Myriam Soseilos",
     tagline: "Audaciously different fine jewellery",
     heroSubtitle:
-      "Fine jewellery that moves, transforms and provokes. Inspired by architecture, space and the wearer themselves. For the independent-minded few who refuse to wear what everybody else wears.",
+      "We believe in brave and bold. For the ones who dare to show their true selves and belong to a group of one. Unconventional, innovative and individual, with quality and uniqueness at the core.",
   },
   about: {
     intro:
@@ -24,18 +24,18 @@ export const siteContent = {
       intro:
         "Our philosophy is to handcraft jewellery created from materials that are ethically sourced and processed with consideration to the environment and social impact.",
       points: [
-        "90% of the precious metal we use is 100% recycled, reducing the ecological risk involved in mining new metal",
-        "Our diamonds are obtained from conflict-free sources and are laser-inscribed with a tracking number",
-        "We work with lab-created diamonds that match the appearance, structure and durability of natural gems",
-        "We verify that our sources for all gems promote worker well-being and support the local economy",
-        "We are an eco-friendly brand making every effort to ensure each piece brings the least amount of harm to the environment",
+        "Our gold isn't mined. It's recovered and reworked from forgotten jewellery and what already exists, then refined until it's indistinguishable from new. Nothing is wasted or ignored, even the dust is collected.",
+        "Every diamond we use can be traced precisely. Laser-inscribed, individually coded, and mapped from origin to final form. We track where it began, not just where it ended up.",
+        "We work with lab-created diamonds that match the appearance, structure and durability of natural gems, because beauty shouldn't require compromise.",
+        "We verify that our sources for all gems promote worker well-being and support the local economy. Sometimes the story of an older piece stays with it: a stone gets reset, a fragment reimagined, a past life carried forward.",
+        "Hallmarked, verified and transparent. Not because we have to, but because anything less would feel dishonest. Every piece is accounted for, every material questioned, every decision intentional.",
       ],
     },
   },
   bespoke: {
-    heading: "My Way",
+    heading: "We Build You",
     description:
-      "Bespoke at Myriam Soseilos means truly one-of-a-kind — engagement rings born from shared memories, heirloom transformations that bridge generations, statement pieces that mark a personal story. A wedding ring. A spine piece. Something nobody else on the planet will ever own. Each commission moves from concept to finished piece in 3 to 4 weeks, using precision 3D modelling to perfect every detail before casting at a specialist atelier in Athens and hand-finishing in Cyprus or the UK. Clients can also bring existing jewellery to be recycled and reimagined into something entirely new.",
+      "We build from who you are. Not a version of you, not an idea of you, but you. We start with memory, the kind that shapes you, and create pieces that don't stay still. They evolve as you add, remove and transform them. A gem isn't just a stone, it marks something: a beginning, an ending, a change. Every commission starts with a conversation and becomes a deeply personal collaboration with no templates and no compromises.",
     collections:
       "Each collection has its own story — but all reflect the same unconventional spirit. Choose your metal, gemstones and finish to make any piece uniquely yours.",
     clientJourney: {

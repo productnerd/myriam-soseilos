@@ -65,23 +65,23 @@ export function InnovationSection() {
           className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14"
         >
           <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
-            Every piece starts with a question: what else could it do? Magnets
-            embedded in precious metal let a single ring become ten different
-            configurations. A necklace transforms into a bracelet. An earring
-            reverses to reveal a hidden face.
+            Every piece starts with a question: what if it did something?
+            Magnets embedded in precious metal let a single ring become ten
+            different configurations. A necklace transforms into a bracelet,
+            and an earring reverses to reveal a hidden face.
           </motion.p>
           <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
             Myriam was one of the first jewellery designers in the world to
-            work with osmium — the densest naturally occurring element on
-            Earth. She created a ring that shifts colour with body temperature.
-            These aren&apos;t gimmicks; they&apos;re complications, the
+            work with osmium, the densest naturally occurring element on
+            Earth. She also created a ring that shifts colour with body
+            temperature. These aren&apos;t gimmicks, they&apos;re the
             mechanical challenges that drive every collection.
           </motion.p>
           <motion.p variants={fadeUp} className="text-foreground/60 leading-relaxed">
-            Inspired by architecture, space and the wearer themselves — nothing
-            is conventional and nothing is quite like it on the market.
-            Incomparable designs from a fiercely creative mind that asks
-            &ldquo;what if?&rdquo; before every project.
+            Jewellery shouldn&apos;t just exist to decorate. It should exist
+            to declare something. Inspired by architecture, space and the
+            wearer themselves, nothing here is conventional and nothing is
+            quite like it anywhere else.
           </motion.p>
         </motion.div>
       </div>

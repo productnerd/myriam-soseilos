@@ -110,7 +110,16 @@ export function MadameFigaroAwardLogo({ className = "" }: LogoProps) {
   return (
     <svg viewBox="0 0 260 48" className={className} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <text x="130" y="18" textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize="14" fontWeight="700" letterSpacing="3">MADAME FIGARO</text>
-      <text x="130" y="38" textAnchor="middle" fontFamily="Helvetica, Arial, sans-serif" fontSize="10" fontWeight="300" letterSpacing="3">INTERNATIONAL AWARD</text>
+      <text x="130" y="38" textAnchor="middle" fontFamily="Helvetica, Arial, sans-serif" fontSize="9" fontWeight="300" letterSpacing="2">WOMEN OF THE YEAR AWARDS</text>
+    </svg>
+  );
+}
+
+export function ProfessionalJewellerLogo({ className = "" }: LogoProps) {
+  return (
+    <svg viewBox="0 0 280 48" className={className} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <text x="140" y="18" textAnchor="middle" fontFamily="Helvetica, Arial, sans-serif" fontSize="10" fontWeight="300" letterSpacing="3">PROFESSIONAL</text>
+      <text x="140" y="38" textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize="18" fontWeight="400" letterSpacing="4">JEWELLER</text>
     </svg>
   );
 }
@@ -207,8 +216,8 @@ export const pressLogoMap: Record<string, React.FC<LogoProps>> = {
 // Map award organization names to logo components
 export const awardLogoMap: Record<string, React.FC<LogoProps>> = {
   "National Association of Jewellers": NAJLogo,
-  "International Trade & Export Awards": InternationalTradeAwardsLogo,
-  "Madame Figaro International Award": MadameFigaroAwardLogo,
-  "UK Watch & Jewellery Awards": UKJewelleryAwardsLogo,
+  "Madame Figaro Women of the Year Awards": MadameFigaroAwardLogo,
+  "Retail Jeweller": RetailJewellerLogo,
+  "Professional Jeweller": ProfessionalJewellerLogo,
   "London Jewellery Week": LondonJewelleryWeekLogo,
 };

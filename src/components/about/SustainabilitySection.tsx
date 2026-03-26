@@ -87,7 +87,7 @@ export function SustainabilitySection() {
             Our Philosophy
           </p>
           <h2 className="text-display-lg">
-            Φιλοσοφία
+            Disrupt the Origin
           </h2>
         </AnimatedSection>
 

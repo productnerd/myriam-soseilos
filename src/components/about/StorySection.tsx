@@ -60,28 +60,23 @@ export function StorySection() {
               className="text-foreground/60 leading-relaxed mb-5"
             >
               It started at Vogue. During a traineeship at the magazine, Myriam
-              found herself quietly obsessed with the jewellery — not the safe,
-              predictable kind, but the pieces that made you stop and think. She
-              moved into advertising, climbed the ranks, but kept making pieces
-              at her kitchen table. When strangers started offering to buy them,
-              she stopped pretending it was a hobby.
+              was surrounded by perfection and noticed something missing: risk.
+              Everything she saw was jewellery that behaved, jewellery that asked
+              for approval. That didn&apos;t interest her, so she started making
+              her own pieces at the kitchen table after work. When people stopped
+              asking where it was from and started asking to buy it, she stopped
+              pretending it was a hobby.
             </motion.p>
             <motion.p
               variants={fadeUp}
               className="text-foreground/60 leading-relaxed mb-6"
             >
-              Her early work was sharp and angular — architecture you could wear.
-              Then came the question that drives everything she does: &ldquo;what
-              else could it do?&rdquo; Her Transformer collection was born from
-              this obsession with complications — the mechanical challenge of
-              making jewellery that does something. She embedded magnets into
-              precious metal, letting a single piece be worn in ten different
-              configurations. She created a ring that shifts colour with body
-              temperature. She became one of the first designers in the world to
-              work with osmium — the densest naturally occurring element on
-              Earth. One client picked up a piece and simply asked, &ldquo;but
-              what does it do?&rdquo; — and that question became her design
-              philosophy.
+              Every piece begins with a refusal to sit still. What if it
+              changed? What if it did something? She hides magnets inside
+              precious metal, makes pieces that transform, and designs rings
+              that react to the body. She works with osmium, the rarest material
+              on Earth, and turns it into something intimate. Not for novelty,
+              but because it means something.
             </motion.p>
             <motion.div
               variants={fadeIn}
@@ -120,9 +115,8 @@ export function StorySection() {
               variants={fadeUp}
               className="text-foreground/60 leading-relaxed mb-5"
             >
-              Her pieces have been featured in Vogue UK and Marie Claire, stocked
-              at Selfridges, and walked fashion weeks in London, Paris and
-              Shanghai. She gave a{" "}
+              Her work has been worn at Selfridges, seen in Vogue, and walked
+              across London, Paris and Shanghai. She gave a{" "}
               <a
                 href={siteContent.about.tedTalk.url}
                 target="_blank"
@@ -131,21 +125,17 @@ export function StorySection() {
               >
                 TEDx talk
               </a>{" "}
-              on why jewellery is the most intimate form of art — something you
+              on why jewellery is the most intimate form of art, something you
               carry against your skin that says who you are without speaking.
             </motion.p>
             <motion.p
               variants={fadeUp}
               className="text-foreground/60 leading-relaxed"
             >
-              Myriam wouldn&apos;t enjoy working on something she didn&apos;t
-              love or didn&apos;t feel was different — and that integrity shapes
-              every piece. Her collaborations with brands like Candy Crush show
-              the same fearless creativity. Style, she believes, should be a
-              mirror for the soul. Her pieces are for the bold of heart — less
-              &ldquo;look at me&rdquo;, more &ldquo;this is who I am&rdquo;.
-              When you wear a Myriam Soseilos piece, you&apos;re joining a group
-              of one.
+              Myriam Soseilos is for people who would rather be questioned than
+              understood. Not &ldquo;look at me&rdquo; but &ldquo;this is who I
+              am.&rdquo; You don&apos;t wear it to belong. You wear it because
+              you already don&apos;t.
             </motion.p>
           </motion.div>
         </div>
