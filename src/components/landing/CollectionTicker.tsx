@@ -16,8 +16,8 @@ export function CollectionTicker() {
     .map((c) => ({ ...c, image: c.coverImage || getCollectionImage(c.slug) }))
     .filter((c) => c.image);
 
-  // Repeat enough to guarantee no gap (4× covers even very wide screens)
-  const repeated = [...items, ...items, ...items, ...items];
+  // Duplicate exactly once — animation translates -50% (one full set) then loops
+  const repeated = [...items, ...items];
 
   return (
     <section className="py-16 md:py-24 overflow-hidden">

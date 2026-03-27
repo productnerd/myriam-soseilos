@@ -23,6 +23,7 @@ export const collections: Collection[] = [
     tagline: "Jewellery that does something",
     description:
       "The Transformer collection is driven by one question: what else could it do? Pieces that rotate, expand, reverse and reconfigure — fine jewellery with mechanical complications that challenge what a ring, pendant or earring can be.",
+    coverImage: "/transformers.jpg.jpeg",
   },
   {
     slug: "otherworldly",

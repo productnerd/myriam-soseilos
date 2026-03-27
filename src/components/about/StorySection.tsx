@@ -77,7 +77,7 @@ export function StorySection() {
               className="relative aspect-[8/9] overflow-hidden bg-surface rounded-lg mb-6 lg:order-2"
             >
               <Image
-                src={imageSrc("/about2.jpeg")}
+                src={imageSrc("/aboutnew.jpg.jpeg")}
                 alt="Myriam Soseilos craftsmanship"
                 fill
                 className="object-cover rounded-lg"
