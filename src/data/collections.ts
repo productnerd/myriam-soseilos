@@ -14,6 +14,7 @@ export type Collection = {
   tagline: string;
   description: string;
   coverImage?: string;
+  coverPosition?: string;
 };
 
 export const collections: Collection[] = [
@@ -38,6 +39,7 @@ export const collections: Collection[] = [
     tagline: "Architecture, spiral shapes and geometric lines",
     description:
       "Reminiscent of grand cities, the Skyline collection is inspired by architecture, spiral shapes and clean geometric lines.",
+    coverImage: "/skyline.jpg.jpeg",
   },
   {
     slug: "cosmic-dust",
@@ -54,6 +56,7 @@ export const collections: Collection[] = [
     description:
       "The Jagged collection plays with sharp, crystalline forms — stick shapes, clusters and angular geometry set with sapphires, spinels and diamonds. Pieces that catch the light from every angle.",
     coverImage: "/images/products/cover-jagged.jpg",
+    coverPosition: "right center",
   },
   {
     slug: "naked-square",

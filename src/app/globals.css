@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .text-display-xl,
+  .text-display-lg,
+  .text-display-md {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -15,12 +24,12 @@
     background:
       linear-gradient(
         180deg,
-        #050810 0%,
-        #080c18 25%,
-        #0a1020 50%,
-        #0d1428 70%,
-        #101830 85%,
-        #131c38 100%
+        #030508 0%,
+        #050810 25%,
+        #070a16 50%,
+        #090d1c 70%,
+        #0b1022 85%,
+        #0d1228 100%
       )
       fixed;
   }

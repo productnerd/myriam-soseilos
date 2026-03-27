@@ -6,6 +6,7 @@ import { siteContent } from "@/data/siteContent";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
+import { imageSrc } from "@/lib/image";
 
 export function BespokeSection() {
   return (
@@ -29,7 +30,7 @@ export function BespokeSection() {
             className="relative overflow-hidden bg-surface rounded-lg lg:row-span-2 aspect-[3/4] lg:aspect-auto"
           >
             <Image
-              src={siteContent.images.bespoke}
+              src={imageSrc(siteContent.images.bespoke)}
               alt="Bespoke jewellery creation"
               fill
               className="object-cover rounded-lg"
@@ -85,7 +86,7 @@ export function BespokeSection() {
               className="relative aspect-[4/3] overflow-hidden bg-surface rounded-lg"
             >
               <Image
-                src={siteContent.images.aboutJewellery}
+                src={imageSrc("/bespoke2.jpg")}
                 alt="Custom bracelet and ring"
                 fill
                 className="object-cover rounded-lg"

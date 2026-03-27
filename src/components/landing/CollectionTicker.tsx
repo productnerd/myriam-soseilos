@@ -13,7 +13,7 @@ function getCollectionImage(slug: string): string | null {
 
 export function CollectionTicker() {
   const items = collections
-    .map((c) => ({ ...c, image: c.coverImage || getCollectionImage(c.slug) }))
+    .map((c) => ({ ...c, image: c.coverImage || getCollectionImage(c.slug), position: c.coverPosition }))
     .filter((c) => c.image);
 
   // Duplicate exactly once — animation translates -50% (one full set) then loops
@@ -32,7 +32,7 @@ export function CollectionTicker() {
       >
         <div
           className="flex animate-scroll-left"
-          style={{ animationDuration: "35s" }}
+          style={{ animationDuration: "25s" }}
         >
         {repeated.map((collection, i) => (
           <Link
@@ -47,6 +47,7 @@ export function CollectionTicker() {
                 alt={collection.name}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
+                style={collection.position ? { objectPosition: collection.position } : undefined}
                 sizes="(max-width: 768px) 312px, 384px"
               />
 
